@@ -43,6 +43,8 @@ body {
 }
 
 .btn {
+  display: inline-flex;
+  align-items: center;
   font-family: "Montserrat SemiBold", sans-serif;
   padding: 18px 35px;
   font-size: 22px;
@@ -66,7 +68,16 @@ body {
       box-shadow: 2px 2px 15px #91009D;
     }
   }
+
+  &_outlined {
+    padding: 22.5px 22.37px 22.5px 27.73px;
+    border-radius: 60px 0px;
+    font-size: 27px;
+    border: 2px solid transparent;
+  }
 }
+
+
 
 .title-l {
   display: inline-block;
@@ -88,7 +99,8 @@ body {
 }
 
 .title-m {
-
+  font-family: "Chakra Petch SemiBold", sans-serif;
+  font-size: 85px;
 }
 
 .title-s {
@@ -110,6 +122,11 @@ body {
 .text{
   &_color {
     -webkit-text-fill-color: transparent;
+  }
+
+  &_m {
+    font-size: 25px;
+    letter-spacing: 0.03em;
   }
 
   &_xs {
@@ -184,8 +201,6 @@ body {
     &:hover {
       display: block;
     }
-    /*top: 0;
-    left: 40px;*/
   }
 
   &__item {
@@ -204,4 +219,6 @@ body {
     cursor: pointer;
   }
 }
+
+
 
