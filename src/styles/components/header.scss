@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(13, 13, 13, 0.2);
+  backdrop-filter: blur(15px);
+  z-index: 999;
+
+  &__container {
+    max-width: 1880px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-left: 40px;
+  }
+
+  &__menu-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

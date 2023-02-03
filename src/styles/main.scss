@@ -1,0 +1,11 @@
+@import "./general/normalize.scss";
+@import "./general/fonts.scss";
+@import "./general/variables.scss";
+@import "./general/general.scss";
+
+@import "./components/*.scss";
+
+@import "./pages/*.scss";
+
+@import "./plugins/*.scss";
+
