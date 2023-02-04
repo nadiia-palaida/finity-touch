@@ -42,15 +42,16 @@ task('copy:fonts', () => {
 })
 
 task('styles', () => {
-    return src([`${SRC_PATH}/styles/main.scss`, `node_modules/swiper/swiper.css`])
+    return src([`${SRC_PATH}/styles/main.scss`, `node_modules/swiper/swiper-bundle.css`])
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
+
         .pipe(concat('main.min.scss'))
         .pipe(sassGlob())
         .pipe(sass().on('error', sass.logError))
         // .pipe(px2rem())
-        .pipe(gulpif(env === 'dev', autoprefixer({
+        .pipe(autoprefixer({
             cascade: false
-        })))
+        }))
         .pipe(gulpif(env === 'prod', gcmq()))
         .pipe(gulpif(env === 'prod', cleanCSS()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))

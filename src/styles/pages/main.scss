@@ -101,10 +101,8 @@
     font-family: "Montserrat SemiBold", sans-serif;
     font-size: 20px;
     background-image: linear-gradient(103.59deg, #54D6FF 13.23%, #C275FF 56.28%, #F36AFF 91.95%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
   }
 }
@@ -117,6 +115,29 @@
   &__item {
     display: flex;
 
+    &-wrap {
+      position: relative;
+      margin-bottom: 109px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(even) {
+        .info__item {
+          flex-direction: row-reverse;
+        }
+
+        .info__item-bg {
+          left: 0;
+        }
+      }
+    }
+
+    &-bg {
+      position: relative;
+    }
+
     &-img-wrap {
       width: 50%;
     }
@@ -127,7 +148,6 @@
 
     &-text-wrap {
       position: relative;
-      margin-bottom: 25px;
 
       &::before {
         content: '';
@@ -154,13 +174,14 @@
 
     &-text {
       width: 50%;
+      padding-top: 53px;
     }
 
     &-title {
       padding-left: 60px;
       margin-bottom: 25px;
-      -webkit-background-clip: text;
-      background-clip: text;
+
+      -webkit-text-fill-color: $main-white;
       color: $main-white;
     }
 
@@ -170,15 +191,15 @@
 
     &-link-wrap {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       position: relative;
-      background: $main-black;
     }
 
     &-link {
+      display: flex;
+      flex: 0 0 auto;
       position: relative;
       z-index: 2;
-      overflow-x: hidden;
       background: $main-black;
     }
 
@@ -187,24 +208,386 @@
     }
 
     &-link-decoration {
+      position: relative;
+      display: flex;
+      flex: 1 1 auto;
+      align-self: flex-end;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 23px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        border-bottom: 2px dashed $main-white;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: $main-white;
+      }
+    }
+
+    &-product-number {
+      font-family: "Chakra Petch Regular", sans-serif;
+      font-size: 19px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      line-height: 180%;
+    }
+
+    &-bg {
       position: absolute;
       right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      border-bottom: 2px solid $main-white;
-      z-index: 1;
+      top: 0;
+      transform: translateY(-15%);
     }
 
     &_green {
       .info__item-title {
         background-image: linear-gradient(148.71deg, #B2FF0F 10.47%, #76FFEF 88.29%);
+        background-clip: text;
       }
 
       .info__item-link {
         background: linear-gradient($main-black, $main-black) padding-box,
         linear-gradient(148.71deg, #B2FF0F 10.47%, #76FFEF 88.29%) border-box;
       }
+
     }
+
+    &_purple {
+      .info__item-title {
+        background: linear-gradient(145.54deg, #7673FF 10.4%, #42F4FF 92.38%);
+        background-clip: text;
+      }
+
+      .info__item-link {
+        background: linear-gradient($main-black, $main-black) padding-box,
+        linear-gradient(145.54deg, #7673FF 10.4%, #42F4FF 92.38%) border-box;
+      }
+    }
+
+    &_orange {
+      .info__item-title {
+        background: linear-gradient(144.66deg, #FF6C56 6.96%, #FF9344 88.16%);
+        background-clip: text;
+      }
+
+      .info__item-link {
+        background: linear-gradient($main-black, $main-black) padding-box,
+        linear-gradient(144.66deg, #FF6C56 6.96%, #FF9344 88.16%) border-box;
+      }
+    }
+  }
+}
+
+.team {
+  &-section {
+    position: relative;
+    padding: 70px 0 25.5px 0;
+  }
+
+  &-section-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    &__left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateY(-20%);
+    }
+
+    &__right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translateY(-10%);
+    }
+  }
+
+  &__container {
+    position: relative;
+    max-width: 1291px;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+  }
+
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    font-size: 22px;
+    border-color: $main-white;
+  }
+
+  &__btn-text {
+    margin-right: 10px;
+  }
+}
+
+.team-card {
+  width: calc(25% - 47px);
+  margin-right: 47px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 9px #91009D;
+  border-radius: 10px;
+  background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #86AFFE, #A57AFF, #FB84FF) border-box;
+  border: 1px solid transparent;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 10px;
+  }
+
+  &__name {
+    margin-bottom: 13.5px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__position {
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: $main-text2;
+    text-align: center;
+  }
+
+  &__social-list {
+    display: flex;
+    padding: 0 71px;
+    justify-content: space-around;
+  }
+
+  &__social-link {
+    &.linkedin:hover {
+      filter: drop-shadow(0px 0px 15px #3964FC);
+    }
+    &.instagram:hover {
+      filter: drop-shadow(0px 0px 15px #FF7235);
+    }
+    &.telegram:hover {
+      filter: drop-shadow(0px 0px 15px #9A4BFF);
+    }
+    &.twitter:hover {
+      filter: drop-shadow(0px 0px 15px #5FECFF);
+    }
+  }
+}
+
+.partners{
+  &-section {
+    padding: 25.5px 0 77px 0;
+    background: $main-black;
+  }
+
+  &__swiper {
+    background: $main-black;
+  }
+}
+
+.faq {
+  &-section {
+    padding: 77px 0 91px 0;
+  }
+
+  &__wrap {
+    display: flex;
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__title {
+    background-image: linear-gradient(143.85deg, #FFB78F 11.79%, #DB73FF 85.69%);
+  }
+
+  &__gif {
+    max-width: 100%;
+  }
+
+  &__list {
+    padding-top: 14px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0px 37px 0 0px;
+    margin-bottom: 30px;
+    background: $main-black;
+    box-shadow: 2px 2px 20px rgba(239, 57, 255, 0.3);
+    border-radius: 10px;
+    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #FFB78F, #DB73FF) border-box;
+    border: 1px solid transparent;
+    overflow: hidden;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.open {
+      .faq__item-answer {
+        opacity: 1;
+        margin-bottom: 31px;
+      }
+    }
+  }
+
+  &__item-question {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 20px;
+    align-items: center;
+    width: 100%;
+    font-size: 28px;
+    color: $main-white;
+    cursor: pointer;
+  }
+
+  &__item-answer {
+    max-height: 0;
+    overflow: hidden;
+    will-change: max-height;
+    opacity: 0;
+    transition: all 0.25s ease-out;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 19px;
+    color: $main-text2;
+  }
+}
+
+.social {
+  &-section {
+    padding: 91px 0 140px 0px;
+  }
+
+  &__container {
+    max-width: 1265px;
+  }
+
+  &__bg {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__bg-img {
+    max-width: 100%;
+  }
+
+  &__bg-mask {
+    position: absolute;
+    bottom: -65px;
+    left: -50px;
+    z-index: 10;
+    pointer-events: none;
+  }
+  
+  &__title {
+    margin-bottom: 367px;
+    text-align: center;
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__item {
+    position: absolute;
+    z-index: 5;
+
+    &.linkedin {
+      top: -257px;
+      left: 673px;
+    }
+
+    &.discord {
+      top: -163px;
+      left: 367px;
+    }
+
+    &.reddit {
+      top: 18px;
+      left: 568px;
+    }
+
+    &.telegram {
+      top: 56px;
+      left: 266px;
+    }
+
+    &.twitter {
+      top: 60px;
+      left: 780px;
+    }
+
+    &.instagram {
+      top: 240px;
+      left: 312px;
+    }
+  }
+
+  &__item-link {
+    pointer-events: auto;
+
+    &:hover {
+      .social__item-icon {
+        transform: scale3d(1.2, 1.2, 1.2);
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.contact {
+  &-section {
+    padding: 140px 0 269.5px 0;
+  }
+
+  &__title {
+    margin-bottom: 63px;
+  }
+
+  &__form-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__form {
+    width: 611px;
   }
 }

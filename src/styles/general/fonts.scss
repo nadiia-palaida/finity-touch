@@ -57,3 +57,15 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Chakra Petch Regular';
+  src: url('./fonts/ChakraPetch/ChakraPetch-Regular.eot');
+  src: url('./fonts/ChakraPetch/ChakraPetch-Regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/ChakraPetch/ChakraPetch-Regular.woff2') format('woff2'),
+  url('./fonts/ChakraPetch/ChakraPetch-Regular.woff') format('woff'),
+  url('./fonts/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
