@@ -1,0 +1,179 @@
+
+.title-l {
+  display: inline-block;
+  font-family: "Chakra Petch SemiBold", sans-serif;
+  background-image: linear-gradient(103.59deg, #54D6FF 13.23%, #C275FF 56.28%, #F36AFF 91.95%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &_big {
+    font-size: 147px;
+    font-weight: 600;
+  }
+
+  &_small {
+    font-size: 120px;
+    line-height: 100px;
+  }
+}
+
+.title-m {
+  font-family: "Chakra Petch SemiBold", sans-serif;
+  font-size: 85px;
+}
+
+.title-s {
+  font-family: "Chakra Petch Bold", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  background-clip: text;
+  color: $main-white;
+  background-image: linear-gradient(103.59deg, #54D6FF 13.23%, #C275FF 56.28%, #F36AFF 91.95%);
+}
+
+.text-l {
+  font-family: "Montserrat Regular", sans-serif;
+  font-size: 37px;
+  color: $main-text2;
+}
+
+.text{
+  &_color {
+    -webkit-text-fill-color: transparent;
+  }
+
+  &_m {
+    font-size: 25px;
+    letter-spacing: 0.03em;
+  }
+
+  &_xs {
+    font-size: 17px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.subtitle {
+  font-size: 48px;
+}
+
+@media screen and (max-width: 1600px) {
+  .title-l {
+    &_big {
+      font-size: 100px;
+    }
+  }
+
+  .title-m {
+      font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 37px;
+  }
+
+  .text-l {
+    font-size: 28px;
+  }
+
+  .text_m {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .title-l {
+    &_big {
+      font-size: 85px;
+    }
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .text-l {
+    font-size: 24px;
+  }
+
+  .title-s {
+    font-size: 55px;
+  }
+
+  .title-m {
+    font-size: 49px;
+  }
+
+  .text_m {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .title-l {
+    &_big {
+      font-size: 66px;
+    }
+  }
+
+  .subtitle {
+    font-size: 23px;
+    line-height: 35px;
+  }
+
+  .text-l {
+    font-size: 17px;
+  }
+
+  .title-s {
+    font-size: 45px;
+  }
+
+  .title-m {
+    font-size: 34px;
+  }
+
+  .text_m {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-l {
+    &_big {
+      font-size: 55.58px;
+      line-height: 72px;
+    }
+  }
+
+  .subtitle {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .text-l {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .text_xs {
+    font-size: 14px;
+  }
+
+  .title-s {
+    font-size: 24px;
+  }
+
+  .text_m {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text_xs {
+    font-size: 12px;
+  }
+
+  .title-m {
+    font-size: 30px;
+  }
+}

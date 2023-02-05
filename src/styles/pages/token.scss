@@ -1,0 +1,311 @@
+.token__main {
+  position: relative;
+
+  &-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &-section {
+    padding-top: calc(125px + 114px);
+    background: url('./images/token/main/main-bg.gif') center top no-repeat;
+    background-size: contain;
+  }
+
+  &-wrap {
+    position: relative;
+    padding-bottom: 101px;
+  }
+
+  &-info {
+    width: 35%;
+  }
+
+  &-title {
+    width: 100%;
+    margin-bottom: 21px;
+
+    &_right {
+      display: block;
+      width: 100%;
+      text-align: right;
+    }
+
+    &_color {
+      display: inline-block;
+      margin-bottom: 21px;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(103.59deg, #FC84FF 13.23%, #54D1FA 91.95%);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-text {
+    font-family: "Chakra Petch Regular", sans-serif;
+    font-size: 22px;
+    margin-bottom: 45px;
+  }
+
+  &-btn {
+    padding: 18px 70.5px;
+    margin-bottom: 173px;
+    position: relative;
+    background: linear-gradient($main-black, $main-black) padding-box,
+    linear-gradient(to right, #FC84FF, #54D1FA) border-box;
+    font-size: 22px;
+  }
+}
+
+.tokenomic {
+  &-section {
+    padding-top: 101px;
+    padding-bottom: 100px;
+  }
+
+  &__container {
+    max-width: 1143px;
+  }
+
+  &__chart-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    font-family: "Montserrat SemiBold", sans-serif;
+    background-image: linear-gradient(117.47deg, #86AFFE 7.39%, #A57AFF 23.36%, #FB84FF 38.85%);
+  }
+
+  &__description {
+    margin-bottom: 66px;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
+
+.roadmap {
+  &-section {
+    padding-top: 100px;
+    padding-bottom: 143px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    letter-spacing: 0.11em;
+  }
+
+  &__description {
+    margin: 0 auto;
+    max-width: 1113px;
+    text-align: center;
+    margin-bottom: 99px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-end;
+
+     &_reverse {
+       justify-content: flex-start;
+
+       .roadmap__item-decor-wrap {
+         margin-right: 0;
+         margin-left: 30px;
+       }
+
+       .roadmap__item-decor {
+         flex-direction: row-reverse;
+       }
+
+       .roadmap__item-decor-circle {
+         margin-right: 31px;
+         border-color: #5FECFF;
+       }
+
+       .roadmap__item-decor-text {
+         margin-right: 0;
+       }
+
+       .roadmap__item-decor-line {
+         background: #54D1FA;
+         margin-left: 23px;
+         margin-right: 0;
+       }
+     }
+
+    &.active {
+      .roadmap__item-decor-circle {
+        border: none;
+        background: linear-gradient(103.59deg, #FC84FF 13.23%, #54D1FA 91.95%);
+      }
+    }
+  }
+
+  &__item-decor {
+    display: inline-flex;
+    align-items: center;
+
+    &-wrap {
+      margin-right: 30px;
+      margin-top: 50px;
+    }
+
+    &-text {
+      margin-right: 31px;
+      font-family: "Chakra Petch SemiBold", sans-serif;
+      font-size: 30px;
+      line-height: 39px;
+      letter-spacing: 0.11em;
+    }
+
+    &-circle {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #F36AFF;
+      border-radius: 50%;
+    }
+
+    &-line {
+      position: relative;
+      height: 50%;
+      width: 5px;
+      background: #FC84FF;
+      margin-top: -5px;
+      margin-left: auto;
+      margin-right: 23px;
+    }
+  }
+
+  &__block {
+    max-width: 45%;
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(to right, #FFB78F, #DB73FF) border-box;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 9px #91009D;
+/*
+    &::after {
+      content: url("./images/token/roadmap/arrow-gradient2.svg");
+      position: absolute;
+      left: 0;
+      top: 63px;
+      width: 33px;
+      height: 45px;
+      transform: translateX(-100%);
+      background: $main-black;
+    }*/
+  }
+
+  &__block-item {
+    padding: 30px 50px;
+    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #FFB78F, #DB73FF) border-box;
+    border-bottom: 2px solid transparent;
+
+    &:last-child {
+      border-radius: 0 0 30px 30px;
+      border: none;
+    }
+
+    &:first-child {
+      border-radius: 30px 30px 0 0;
+    }
+  }
+
+  &__block-item-title {
+    margin-bottom: 8px;
+    font-family: "Chakra Petch Medium", sans-serif;
+    font-size: 37px;
+    letter-spacing: 0.11em;
+  }
+
+  &__block-item-text {
+    font-size: 24px;
+  }
+}
+
+.token__contact {
+  position: relative;
+  padding-top: 143px;
+  padding-bottom: 124px;
+
+  &-bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &-bg-img {
+    &:nth-child(1) {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(25%);
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(-25%);
+    }
+  }
+
+  &__title {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 50px;
+  }
+}
+
+.token-address {
+  &-section {
+    padding-top: 124px;
+    padding-bottom: 118px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    background-image: linear-gradient(116.77deg, #FC84FF 3.43%, #54D1FA 38.39%);
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  &__address {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 10px 11px 33px;
+    border: 1px solid $main-white;
+    border-radius: 50px;
+
+    &-wrap {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-text {
+      margin-right: 69px;
+    }
+  }
+
+  &__btn {
+    padding: 24px 46px 20px 46px;
+    font-size: 20px;
+  }
+
+  &__icon {
+    margin-right: 14px;
+  }
+}

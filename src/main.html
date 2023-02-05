@@ -4,52 +4,70 @@
     <meta charset="UTF-8">
     <title>Main</title>
     <link rel="stylesheet" href="main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 <header class="header">
     <div class="header__container container">
         <div class="header__wrap">
             <div class="header__logo logo-wrap">
-                <img src="./images/logo.svg" alt="logo" class="logo">
+                <a href="main.html">
+                    <img src="./images/logo.svg" alt="logo" class="logo">
+                </a>
             </div>
 
             <div class="header__menu-wrap">
-                <ul class="menu-list">
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Home</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Marketplace</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Token</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Fund</a>
-                    </li>
-                </ul>
+                <button class="menu-btn">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </button>
 
-                <div class="languages">
-                    <div class="languages__button">
-                        <span class="languages__title">EN</span>
-                        <svg width="14" height="8" class="languages__icon-arrow">
-                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                        </svg>
+                <div class="menu-list__wrap">
+                    <div class="menu-list__wrapper">
+                        <button class="menu-btn__close">
+                            <span class="menu-btn__line"></span>
+                            <span class="menu-btn__line"></span>
+                        </button>
+
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Home</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Marketplace</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Token</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Fund</a>
+                            </li>
+                        </ul>
+
+                        <div class="languages">
+                            <div class="languages__button">
+                                <span class="languages__title">EN</span>
+                                <svg width="14" height="8" class="languages__icon-arrow">
+                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </div>
+
+                            <!-- <ul class="languages__list">
+                                 <li class="languages__item">
+                                     <button class="languages__btn">UA</button>
+                                 </li>
+                                 <li class="languages__item">
+                                     <button class="languages__btn">PL</button>
+                                 </li>
+                             </ul>-->
+                        </div>
+
+                        <div class="header__buttons">
+                            <button class="header__btn btn btn_empty">Contact Us</button>
+                            <button class="header__btn btn btn_color">Buy Token</button>
+                        </div>
                     </div>
-
-                    <ul class="languages__list">
-                        <li class="languages__item">
-                            <button class="languages__btn">UA</button>
-                        </li>
-                        <li class="languages__item">
-                            <button class="languages__btn">PL</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="header__buttons">
-                    <button class="header__btn btn btn_empty">Contact Us</button>
-                    <button class="header__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
         </div>
@@ -61,7 +79,7 @@
         <div class="main__wrap">
             <div class="main__info">
                 <h1 class="main__title title-l title-l_big">Finity Touch</h1>
-                <h4 class="subtitle">Creating an ecosystem WEB 3.0 that you really want to use</h4>
+                <h4 class="main__subtitle subtitle">Creating an ecosystem WEB 3.0 that you really want to use</h4>
                 <div class="main__text text-l">Finity Touch creates the infrastructure for a secure and innovative
                     future
                 </div>
@@ -70,8 +88,8 @@
                     <button class="main__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
-            <div>
-                <img src="./images/coin.gif" alt="coin" class="main__coin-gif">
+            <div class="main__gif-wrap">
+                <img src="./images/home/coin.gif" alt="coin" class="main__coin-gif">
             </div>
         </div>
     </div>
@@ -86,7 +104,7 @@
                 <div class="designed__list swiper-wrapper">
                     <div class="designed__item swiper-slide">
                         <div class="designed__item-icon">
-                            <img src="./images/designed/marketplace.svg" alt="marketplace">
+                            <img src="./images/home/designed/marketplace.svg" alt="marketplace">
                         </div>
                         <div class="designed__item-title">Marketplace</div>
                         <div class="designed__item-text text_xs">Discover the world of unique and exclusive NFT with the
@@ -98,23 +116,11 @@
                     </div>
                     <div class="designed__item swiper-slide">
                         <div class="designed__item-icon">
-                            <img src="./images/designed/marketplace.svg" alt="marketplace">
+                            <img src="./images/home/designed/fund.svg" alt="marketplace">
                         </div>
-                        <div class="designed__item-title">Marketplace</div>
-                        <div class="designed__item-text text_xs">Discover the world of unique and exclusive NFT with the
-                            new Finity Touch trading platform
-                        </div>
-                        <div class="designed__item-link-wrap">
-                            <a href="#" class="designed__item-link">More</a>
-                        </div>
-                    </div>
-                    <div class="designed__item swiper-slide">
-                        <div class="designed__item-icon">
-                            <img src="./images/designed/marketplace.svg" alt="marketplace">
-                        </div>
-                        <div class="designed__item-title">Marketplace</div>
-                        <div class="designed__item-text text_xs">Discover the world of unique and exclusive NFT with the
-                            new Finity Touch trading platform
+                        <div class="designed__item-title">Fund</div>
+                        <div class="designed__item-text text_xs">Finity Touch Foundation provides an opportunity to get
+                            maximum support for new ideas in the world of Web 3.0
                         </div>
                         <div class="designed__item-link-wrap">
                             <a href="#" class="designed__item-link">More</a>
@@ -122,11 +128,23 @@
                     </div>
                     <div class="designed__item swiper-slide">
                         <div class="designed__item-icon">
-                            <img src="./images/designed/marketplace.svg" alt="marketplace">
+                            <img src="./images/home/designed/games.svg" alt="marketplace">
                         </div>
-                        <div class="designed__item-title">Marketplace</div>
-                        <div class="designed__item-text text_xs">Discover the world of unique and exclusive NFT with the
-                            new Finity Touch trading platform
+                        <div class="designed__item-title">Games</div>
+                        <div class="designed__item-text text_xs">Play using the Finity token and have fun earning money.
+                            Your success is only in your hands!
+                        </div>
+                        <div class="designed__item-link-wrap">
+                            <a href="#" class="designed__item-link">More</a>
+                        </div>
+                    </div>
+                    <div class="designed__item swiper-slide">
+                        <div class="designed__item-icon">
+                            <img src="./images/home/designed/token.svg" alt="marketplace">
+                        </div>
+                        <div class="designed__item-title">Token</div>
+                        <div class="designed__item-text text_xs">This is an asset that feeds the Finity Touch ecosystem
+                            and ensures the development of existing projects.
                         </div>
                         <div class="designed__item-link-wrap">
                             <a href="#" class="designed__item-link">More</a>
@@ -142,13 +160,13 @@
     <div class="info__wrap">
         <div class="info__item-wrap info__item_green">
             <div class="info__item-bg ">
-                <img src="./images/info/bg-green.svg" alt="bg-circle-green">
+                <img src="./images/home/info/bg-green.svg" alt="bg-circle-green">
             </div>
 
             <div class="container">
                 <div class="info__item">
                     <div class="info__item-img-wrap">
-                        <img src="./images/info/fund.gif" alt="fund" class="info__item-img">
+                        <img src="./images/home/info/fund.gif" alt="fund" class="info__item-img">
                     </div>
                     <div class="info__item-text">
                         <div class="info__item-text-wrap">
@@ -182,13 +200,13 @@
 
         <div class="info__item-wrap info__item_purple">
             <div class="info__item-bg ">
-                <img src="./images/info/bg-purple.svg" alt="bg-circle-purple">
+                <img src="./images/home/info/bg-purple.svg" alt="bg-circle-purple">
             </div>
 
             <div class="container">
                 <div class="info__item">
                     <div class="info__item-img-wrap">
-                        <img src="./images/info/joystick.gif" alt="joystick" class="info__item-img">
+                        <img src="./images/home/info/joystick.gif" alt="joystick" class="info__item-img">
                     </div>
                     <div class="info__item-text">
                         <div class="info__item-text-wrap">
@@ -221,13 +239,13 @@
 
         <div class="info__item-wrap info__item_orange">
             <div class="info__item-bg ">
-                <img src="./images/info/bg-orange.svg" alt="bg-circle-orange">
+                <img src="./images/home/info/bg-orange.svg" alt="bg-circle-orange">
             </div>
 
             <div class="container">
                 <div class="info__item">
                     <div class="info__item-img-wrap">
-                        <img src="./images/info/market.gif" alt="market" class="info__item-img">
+                        <img src="./images/home/info/market.gif" alt="market" class="info__item-img">
                     </div>
                     <div class="info__item-text">
                         <div class="info__item-text-wrap">
@@ -262,8 +280,8 @@
 
 <section class="team team-section">
     <div class="team-section-bg">
-        <img src="./images/team/Ellipse_15.svg" alt="bg-ellipse-purple" class="team-section-bg__left">
-        <img src="./images/team/Ellipse_16.svg" alt="bg-ellipse-purple" class="team-section-bg__right">
+        <img src="./images/home/team/Ellipse_15.svg" alt="bg-ellipse-purple" class="team-section-bg__left">
+        <img src="./images/home/team/Ellipse_16.svg" alt="bg-ellipse-purple" class="team-section-bg__right">
     </div>
 
     <div class="container team__container">
@@ -272,7 +290,7 @@
         <div class="team__group">
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4365.jpg" alt="Tigran Chobanian" class="team-card__img">
+                    <img src="./images/home/team/IMG_4365.jpg" alt="Tigran Chobanian" class="team-card__img">
                 </div>
                 <div class="team-card__name">Tigran Chobanian</div>
                 <div class="team-card__position">Founder & CFO</div>
@@ -310,7 +328,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4348.jpg" alt="Daniel Aushev" class="team-card__img">
+                    <img src="./images/home/team/IMG_4348.jpg" alt="Daniel Aushev" class="team-card__img">
                 </div>
                 <div class="team-card__name">Daniel Aushev</div>
                 <div class="team-card__position">Co-Founder and CMO</div>
@@ -348,7 +366,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4351.jpg" alt="Erik Anastasian" class="team-card__img">
+                    <img src="./images/home/team/IMG_4351.jpg" alt="Erik Anastasian" class="team-card__img">
                 </div>
                 <div class="team-card__name">Erik Anastasian</div>
                 <div class="team-card__position">Co-Founder Product Manager</div>
@@ -386,7 +404,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4337.jpg" alt="Daniel Hrinberh" class="team-card__img">
+                    <img src="./images/home/team/IMG_4337.jpg" alt="Daniel Hrinberh" class="team-card__img">
                 </div>
                 <div class="team-card__name">Daniel Hrinberh</div>
                 <div class="team-card__position">Co-Founder & CEO</div>
@@ -424,7 +442,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4342.jpg" alt="Karen Shehunts" class="team-card__img">
+                    <img src="./images/home/team/IMG_4342.jpg" alt="Karen Shehunts" class="team-card__img">
                 </div>
                 <div class="team-card__name">Karen Shehunts</div>
                 <div class="team-card__position">Strategic Advisor</div>
@@ -462,7 +480,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4338.jpg" alt="Tihon Belenkiy" class="team-card__img">
+                    <img src="./images/home/team/IMG_4338.jpg" alt="Tihon Belenkiy" class="team-card__img">
                 </div>
                 <div class="team-card__name">Tihon Belenkiy</div>
                 <div class="team-card__position">UI/UX Designer</div>
@@ -500,7 +518,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4354.jpg" alt="Vladimir Kucher" class="team-card__img">
+                    <img src="./images/home/team/IMG_4354.jpg" alt="Vladimir Kucher" class="team-card__img">
                 </div>
                 <div class="team-card__name">Vladimir Kucher</div>
                 <div class="team-card__position">Back-End Developer</div>
@@ -538,7 +556,7 @@
 
             <div class="team-card">
                 <div class="team-card__img-wrap">
-                    <img src="./images/team/IMG_4353.jpg" alt="Artem Prokopchuk" class="team-card__img">
+                    <img src="./images/home/team/IMG_4353.jpg" alt="Artem Prokopchuk" class="team-card__img">
                 </div>
                 <div class="team-card__name">Artem Prokopchuk</div>
                 <div class="team-card__position">3D Artist</div>
@@ -590,34 +608,38 @@
     <div class="swiper partners__swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="#">
-                    <img src="./images/partners/1inch_logo.png" alt="1inch-logo">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/inch_logo.png" alt="1inch-logo">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
-                    <img src="./images/partners/bsc_logo.png" alt="bsc-logo">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/bsc_logo.png" alt="bsc-logo">
                 </a>
             </div>
             <div class="swiper-slide">
-                <img src="./images/partners/coingecko_logo.png" alt="coingecko-logo">
-            </div>
-            <div class="swiper-slide">
-                <img src="./images/partners/coinmarketcap_logo.png" alt="coinmarketcap-logo">
-            </div>
-            <div class="swiper-slide">
-                <a href="#">
-                    <img src="./images/partners/metamask_logo.png" alt="metamask-logo">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/coingecko_logo.png" alt="coingecko-logo">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
-                    <img src="./images/partners/pancakeswap_logo.png" alt="pancakeswap-logo">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/coinmarketcap_logo.png" alt="coinmarketcap-logo">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="#">
-                    <img src="./images/partners/trustwallet_logo.png" alt="trustwallet-logo">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/metamask_logo.png" alt="metamask-logo">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/pancakeswap_logo.png" alt="pancakeswap-logo">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#" class="partners__link">
+                    <img src="./images/home/partners/trustwallet_logo.png" alt="trustwallet-logo">
                 </a>
             </div>
         </div>
@@ -631,7 +653,7 @@
                 <h3 class="faq__title title-s"><span class="text_color">Frequently Asked Questions</span></h3>
 
                 <div class="faq__gif-wrap">
-                    <img src="./images/faq/faq-gif.gif" alt="questions-gif" class="faq__gif">
+                    <img src="./images/home/faq/faq-gif.gif" alt="questions-gif" class="faq__gif">
                 </div>
             </div>
             <div class="faq__content">
@@ -640,7 +662,7 @@
                         <button class="faq__item-question">
                             <span class="faq__item-question-text">What is Finity Touch?</span>
 
-                            <img src="./images/faq/plus-color.svg" alt="icon-plus">
+                            <img src="./images/home/faq/plus-color.svg" alt="icon-plus">
                         </button>
                         <div class="faq__item-answer">
                             15% of the issue of Finity tokens is used as a monetary fund for the implementation of your
@@ -652,7 +674,7 @@
                         <button class="faq__item-question">
                             <span class="faq__item-question-text">Where can I buy a Finity token?</span>
 
-                            <img src="./images/faq/plus-color.svg" alt="icon-plus">
+                            <img src="./images/home/faq/plus-color.svg" alt="icon-plus">
                         </button>
                         <div class="faq__item-answer">
                             15% of the issue of Finity tokens is used as a monetary fund for the implementation of your
@@ -664,7 +686,7 @@
                         <button class="faq__item-question">
                             <span class="faq__item-question-text">What is the Finity token used for?</span>
 
-                            <img src="./images/faq/plus-color.svg" alt="icon-plus">
+                            <img src="./images/home/faq/plus-color.svg" alt="icon-plus">
                         </button>
 
                         <div class="faq__item-answer">
@@ -677,7 +699,7 @@
                         <button class="faq__item-question">
                             <span class="faq__item-question-text">Didn't find the answer to your question?</span>
 
-                            <img src="./images/faq/plus-color.svg" alt="icon-plus">
+                            <img src="./images/home/faq/plus-color.svg" alt="icon-plus">
                         </button>
                         <div class="faq__item-answer">
                             15% of the issue of Finity tokens is used as a monetary fund for the implementation of your
@@ -696,39 +718,39 @@
 
         <div class="social__bg">
             <div class="social__bg-wrap">
-                <img src="./images/socials/base.png" alt="phone" class="social__bg-img">
-                <img src="./images/socials/mask.png" alt="phone" class="social__bg-mask">
+                <img src="./images/home/socials/base.png" alt="phone" class="social__bg-img">
+                <img src="./images/home/socials/mask.png" alt="phone" class="social__bg-mask">
             </div>
 
             <ul class="social__list">
                 <li class="social__item linkedin">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_linkedin.png" alt="linkedin" class="social__item-icon">
+                        <img src="./images/home/socials/token_linkedin.png" alt="linkedin" class="social__item-icon">
                     </a>
                 </li>
                 <li class="social__item discord">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_discord.png" alt="discord" class="social__item-icon">
+                        <img src="./images/home/socials/token_discord.png" alt="discord" class="social__item-icon">
                     </a>
                 </li>
                 <li class="social__item reddit">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_reddit.png" alt="reddit" class="social__item-icon">
+                        <img src="./images/home/socials/token_reddit.png" alt="reddit" class="social__item-icon">
                     </a>
                 </li>
                 <li class="social__item telegram">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_telegram.png" alt="telegram" class="social__item-icon">
+                        <img src="./images/home/socials/token_telegram.png" alt="telegram" class="social__item-icon">
                     </a>
                 </li>
                 <li class="social__item twitter">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_twitter.png" alt="twitter" class="social__item-icon">
+                        <img src="./images/home/socials/token_twitter.png" alt="twitter" class="social__item-icon">
                     </a>
                 </li>
                 <li class="social__item instagram">
                     <a href="#" class="social__item-link">
-                        <img src="./images/socials/token_instagram.png" alt="instagram" class="social__item-icon">
+                        <img src="./images/home/socials/token_instagram.png" alt="instagram" class="social__item-icon">
                     </a>
                 </li>
             </ul>
@@ -763,6 +785,75 @@
         </div>
     </div>
 </section>
+
+<footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__bg-wrap">
+            <img src="./images/home/footer/coin_2_composition.png" alt="coin"
+                 class="footer__bg-img footer__bg-img_icon">
+            <img src="./images/home/footer/Rectangle_4.png" alt="mask" class="footer__bg-img footer__bg-img_mask">
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__content">
+                <div class="footer__menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">Home</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">Marketplace</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">Token</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#" class="menu-list__link">Fund</a>
+                        </li>
+                    </ul>
+
+                    <div class="languages">
+                        <div class="languages__button">
+                            <span class="languages__title">EN</span>
+                            <svg width="14" height="8" class="languages__icon-arrow">
+                                <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                            </svg>
+                        </div>
+
+                        <!-- <ul class="languages__list">
+                             <li class="languages__item">
+                                 <button class="languages__btn">UA</button>
+                             </li>
+                             <li class="languages__item">
+                                 <button class="languages__btn">PL</button>
+                             </li>
+                         </ul>-->
+                    </div>
+                </div>
+
+                <div class="header__buttons">
+                    <button class="header__btn btn btn_empty">Contact Us</button>
+                    <button class="header__btn btn btn_color">Buy Token</button>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <div class="footer__logo logo-wrap">
+                    <a href="main.html">
+                        <img src="./images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="footer__text">
+                    This website is maintained by Tihon Belenkiy. The contents and opinions of this website are those of
+                    Finity Touch.
+                    Finity Touch provides links to cryptocurrency exchanges as a service to the public
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="main.min.js"></script>
 </body>

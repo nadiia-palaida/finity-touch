@@ -35,6 +35,18 @@
 }
 
 @font-face {
+  font-family: 'Montserrat Bold';
+  src: url('./fonts/Montserrat/Montserrat-Bold.eot');
+  src: url('./fonts/Montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
+  url('./fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
+  url('./fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Chakra Petch Semibold';
   src: url('./fonts/ChakraPetch/ChakraPetch-SemiBold.eot');
   src: url('./fonts/ChakraPetch/ChakraPetch-SemiBold.eot?#iefix') format('embedded-opentype'),
@@ -65,6 +77,18 @@
   url('./fonts/ChakraPetch/ChakraPetch-Regular.woff2') format('woff2'),
   url('./fonts/ChakraPetch/ChakraPetch-Regular.woff') format('woff'),
   url('./fonts/ChakraPetch/ChakraPetch-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chakra Petch Medium';
+  src: url('./fonts/ChakraPetch/ChakraPetch-Medium.eot');
+  src: url('./fonts/ChakraPetch/ChakraPetch-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/ChakraPetch/ChakraPetch-Medium.woff2') format('woff2'),
+  url('./fonts/ChakraPetch/ChakraPetch-Medium.woff') format('woff'),
+  url('./fonts/ChakraPetch/ChakraPetch-Medium.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
