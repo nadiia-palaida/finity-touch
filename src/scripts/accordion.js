@@ -16,12 +16,14 @@ accItems.forEach((accordion) => {
     const intro = accordion.querySelector(".faq__item-question");
     const content = accordion.querySelector(".faq__item-answer");
 
-    intro.addEventListener('click', function () {
-        if (content.style.maxHeight) {
-            closeAccordion(accordion);
-        } else {
-            accItems.forEach((accordion) => closeAccordion(accordion));
-            openAccordion(accordion);
-        }
-    })
+    if(intro) {
+        intro.addEventListener('click', function () {
+            if (content.style.maxHeight) {
+                closeAccordion(accordion);
+            } else {
+                accItems.forEach((accordion) => closeAccordion(accordion));
+                openAccordion(accordion);
+            }
+        })
+    }
 });

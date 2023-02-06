@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Token</title>
     <link rel="stylesheet" href="main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 <header class="header">
@@ -16,42 +17,57 @@
             </div>
 
             <div class="header__menu-wrap">
-                <ul class="menu-list">
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Home</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Marketplace</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Token</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Fund</a>
-                    </li>
-                </ul>
+                <button class="menu-btn">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </button>
 
-                <div class="languages">
-                    <div class="languages__button">
-                        <span class="languages__title">EN</span>
-                        <svg width="14" height="8" class="languages__icon-arrow">
-                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                        </svg>
+                <div class="menu-list__wrap">
+                    <div class="menu-list__wrapper">
+                        <button class="menu-btn__close">
+                            <span class="menu-btn__line"></span>
+                            <span class="menu-btn__line"></span>
+                        </button>
+
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Home</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Marketplace</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Token</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Fund</a>
+                            </li>
+                        </ul>
+
+                        <div class="languages">
+                            <div class="languages__button">
+                                <span class="languages__title">EN</span>
+                                <svg width="14" height="8" class="languages__icon-arrow">
+                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </div>
+
+                            <!-- <ul class="languages__list">
+                                 <li class="languages__item">
+                                     <button class="languages__btn">UA</button>
+                                 </li>
+                                 <li class="languages__item">
+                                     <button class="languages__btn">PL</button>
+                                 </li>
+                             </ul>-->
+                        </div>
+
+                        <div class="header__buttons">
+                            <button class="header__btn btn btn_empty">Contact Us</button>
+                            <button class="header__btn btn btn_color">Buy Token</button>
+                        </div>
                     </div>
-
-                    <!-- <ul class="languages__list">
-                         <li class="languages__item">
-                             <button class="languages__btn">UA</button>
-                         </li>
-                         <li class="languages__item">
-                             <button class="languages__btn">PL</button>
-                         </li>
-                     </ul>-->
-                </div>
-
-                <div class="header__buttons">
-                    <button class="header__btn btn btn_empty">Contact Us</button>
-                    <button class="header__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
         </div>
@@ -157,7 +173,6 @@
                             <div class="roadmap__item-decor-text">STEP 1</div>
                             <div class="roadmap__item-decor-circle"></div>
                         </div>
-                        <div class="roadmap__item-decor-line"></div>
                     </div>
 
                     <div class="roadmap__block">
@@ -176,7 +191,14 @@
                     </div>
                 </div>
 
-                <div class="roadmap__item roadmap__item_reverse active">
+                <div class="roadmap__item active">
+                    <div class="roadmap__item-decor-wrap">
+                        <div class="roadmap__item-decor">
+                            <div class="roadmap__item-decor-text">STEP 2</div>
+                            <div class="roadmap__item-decor-circle"></div>
+                        </div>
+                    </div>
+
                     <div class="roadmap__block">
                         <div class="roadmap__block-item">
                             <div class="roadmap__block-item-title">JUNE 2022</div>
@@ -191,14 +213,6 @@
                             <div class="roadmap__block-item-text">Creation of Finity token</div>
                         </div>
                     </div>
-
-                    <div class="roadmap__item-decor-wrap">
-                        <div class="roadmap__item-decor">
-                            <div class="roadmap__item-decor-text">STEP 2</div>
-                            <div class="roadmap__item-decor-circle"></div>
-                        </div>
-                        <div class="roadmap__item-decor-line"></div>
-                    </div>
                 </div>
 
                 <div class="roadmap__item ">
@@ -207,7 +221,6 @@
                             <div class="roadmap__item-decor-text">STEP 3</div>
                             <div class="roadmap__item-decor-circle"></div>
                         </div>
-                        <div class="roadmap__item-decor-line"></div>
                     </div>
 
                     <div class="roadmap__block">
@@ -226,7 +239,14 @@
                     </div>
                 </div>
 
-                <div class="roadmap__item roadmap__item_reverse">
+                <div class="roadmap__item">
+                    <div class="roadmap__item-decor-wrap">
+                        <div class="roadmap__item-decor">
+                            <div class="roadmap__item-decor-text">STEP 4</div>
+                            <div class="roadmap__item-decor-circle"></div>
+                        </div>
+                    </div>
+
                     <div class="roadmap__block">
                         <div class="roadmap__block-item">
                             <div class="roadmap__block-item-title">DECEMBER 2022</div>
@@ -241,14 +261,6 @@
                             <div class="roadmap__block-item-text">Planex Land NFT collection release</div>
                         </div>
                     </div>
-
-                    <div class="roadmap__item-decor-wrap">
-                        <div class="roadmap__item-decor">
-                            <div class="roadmap__item-decor-text">STEP 4</div>
-                            <div class="roadmap__item-decor-circle"></div>
-                        </div>
-                        <div class="roadmap__item-decor-line"></div>
-                    </div>
                 </div>
 
                 <div class="roadmap__item">
@@ -257,7 +269,6 @@
                             <div class="roadmap__item-decor-text">STEP 5</div>
                             <div class="roadmap__item-decor-circle"></div>
                         </div>
-                        <div class="roadmap__item-decor-line"></div>
                     </div>
 
                     <div class="roadmap__block">
@@ -280,7 +291,14 @@
                     </div>
                 </div>
 
-                <div class="roadmap__item roadmap__item_reverse">
+                <div class="roadmap__item">
+                    <div class="roadmap__item-decor-wrap">
+                        <div class="roadmap__item-decor">
+                            <div class="roadmap__item-decor-text">STEP 6</div>
+                            <div class="roadmap__item-decor-circle"></div>
+                        </div>
+                    </div>
+
                     <div class="roadmap__block">
                         <div class="roadmap__block-item">
                             <div class="roadmap__block-item-title">2024 STEP-01</div>
@@ -294,14 +312,6 @@
                             <div class="roadmap__block-item-title">2024 STEP-03</div>
                             <div class="roadmap__block-item-text">Release of the complete Finity Touch ecosystem</div>
                         </div>
-                    </div>
-
-                    <div class="roadmap__item-decor-wrap">
-                        <div class="roadmap__item-decor">
-                            <div class="roadmap__item-decor-text">STEP 6</div>
-                            <div class="roadmap__item-decor-circle"></div>
-                        </div>
-                        <div class="roadmap__item-decor-line"></div>
                     </div>
                 </div>
             </div>
@@ -368,13 +378,20 @@
 <footer class="footer footer_border">
     <div class="footer__bg">
         <div class="footer__bg-wrap">
-            <img src="./images/home/footer/coin_2_composition.png" alt="coin" class="footer__bg-img footer__bg-img_icon">
+            <img src="./images/home/footer/coin_2_composition.png" alt="coin"
+                 class="footer__bg-img footer__bg-img_icon">
             <img src="./images/home/footer/Rectangle_4.png" alt="mask" class="footer__bg-img footer__bg-img_mask">
         </div>
     </div>
     <div class="container">
         <div class="footer__wrap">
-            <div class="footer__content">
+            <div class="footer__content footer__content-menu">
+                <div class="footer__logo footer__logo-mobile logo-wrap">
+                    <a href="main.html">
+                        <img src="./images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
+
                 <div class="footer__menu">
                     <ul class="menu-list">
                         <li class="menu-list__item">
@@ -410,14 +427,14 @@
                     </div>
                 </div>
 
-                <div class="header__buttons">
+                <div class="header__buttons footer__buttons">
                     <button class="header__btn btn btn_empty">Contact Us</button>
                     <button class="header__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
 
             <div class="footer__content">
-                <div class="footer__logo logo-wrap">
+                <div class="footer__logo footer__logo-desktop logo-wrap">
                     <a href="main.html">
                         <img src="./images/logo.svg" alt="logo" class="logo">
                     </a>

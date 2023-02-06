@@ -12,3 +12,27 @@
     padding: 0;
   }
 }
+
+.team-swiper {
+  padding: 0 40px!important;
+}
+
+.team__swiper-button-next.swiper-button-next {
+  right: 0px;
+
+  &::after {
+    position: relative;
+    content: url("./images/home/team/arrow-right.png");
+    display: block;
+  }
+}
+
+.team__swiper-button-prev.swiper-button-prev {
+  left: 0px;
+
+  &::after {
+    position: relative;
+    content: url("./images/home/team/arrow-left.png");
+    display: block;
+  }
+}

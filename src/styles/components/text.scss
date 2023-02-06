@@ -113,6 +113,11 @@
     &_big {
       font-size: 66px;
     }
+
+    &_small {
+      font-size: 70px;
+      line-height: 60px;
+    }
   }
 
   .subtitle {
@@ -143,6 +148,10 @@
       font-size: 55.58px;
       line-height: 72px;
     }
+
+    &_small {
+      font-size: 60px;
+    }
   }
 
   .subtitle {
@@ -160,7 +169,8 @@
   }
 
   .title-s {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 39px;
   }
 
   .text_m {
@@ -175,5 +185,6 @@
 
   .title-m {
     font-size: 30px;
+    line-height: 39px;
   }
 }

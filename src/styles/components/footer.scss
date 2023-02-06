@@ -57,12 +57,150 @@
     font-size: 17px;
     color: $main-text2;
   }
+
+  &__logo-mobile {
+    display: none;
+    margin-bottom: 18px;
+
+    .logo {
+      max-width: 120px;
+    }
+  }
 }
+@media screen and (max-width: 1600px) {
+  .footer {
+    &__wrap {
+      margin-right: 20px;
+    }
+
+    &__content {
+      margin-bottom: 24px;
+    }
+
+    &__content-menu {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .footer {
     &__content {
       flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    &__wrap {
+      padding-right: 0;
+    }
+
+    &__bg-wrap {
+      display: none;
+    }
+
+    &__menu {
+      margin-bottom: 24px;
+      align-items: center;
+
+      .menu-list {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        padding-top: 0;
+
+        &__item {
+          margin-bottom: 0;
+        }
+      }
+
+      .languages {
+        margin-bottom: 0;
+
+        &__button {
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__text {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    &__logo-desktop {
+      display: none;
+    }
+
+    &__logo-mobile {
+      display: block;
+    }
+
+    .languages {
+      display: none;
+    }
+
+    &__buttons.header__buttons {
+      display: flex;
+      flex-direction: row;
+
+      .header__btn {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding-bottom: 7px;
+
+    &__text {
+      font-size: 9px;
+    }
+
+    &__menu {
+      margin-bottom: 10px;
+      align-items: center;
+
+      .menu-list {
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+          margin-bottom: 10px;
+        }
+
+        &__link {
+          font-size: 18px;
+        }
+      }
+
+      .languages {
+        margin-bottom: 0;
+
+        &__button {
+          &::after {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
