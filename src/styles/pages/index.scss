@@ -1,0 +1,26 @@
+.navigation {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: "Montserrat SemiBold", sans-serif;
+    color: $main-white;
+    padding: 15px;
+    border: 1px solid $main-white;
+    border-radius: 5px;
+
+    &:hover {
+      border-color: #FB84FF;
+      box-shadow: 2px 2px 9px #91009D;
+    }
+  }
+}
