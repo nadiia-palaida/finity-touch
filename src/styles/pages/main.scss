@@ -310,8 +310,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      transform: translateY(-15%);
-      z-index: 0;
+      z-index: -1;
     }
 
     &_green {
@@ -383,14 +382,12 @@
       position: absolute;
       left: 0;
       top: 0;
-      transform: translateY(-20%);
     }
 
     &__right {
       position: absolute;
       right: 0;
       top: 0;
-      transform: translateY(-10%);
     }
   }
 
@@ -517,13 +514,13 @@
     padding: 109px 0 140px 0px;
   }
 
-  &__container {
-    max-width: 1265px;
-  }
-
   &__bg {
     max-width: 100%;
     position: relative;
+  }
+
+  &-conatiner {
+    max-width: 1256px;
   }
 
   &__bg-img {
@@ -631,6 +628,12 @@
     }
   }
 
+  .social {
+    &__container {
+      max-width: 1190px;
+    }
+  }
+
   .team-card {
     width: calc(25% - 40px);
   }
@@ -686,10 +689,20 @@
       line-height: 50px;
     }
   }
+
+  .social {
+    &__container {
+      max-width: 960px;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {
   .social {
+    &__container {
+      max-width: 720px;
+    }
+
     &-section {
       padding-bottom: 70px;
     }
@@ -774,6 +787,17 @@
     }
   }
 
+  .social {
+      &__item {
+        &.instagram {
+          top: 40%;
+        }
+        &.twitter {
+          top: 7%;
+        }
+      }
+  }
+
   .contact {
     &-section {
       padding-top: 70px;
@@ -804,6 +828,19 @@
   .team {
     display: flex;
     order: 5;
+
+    &-section {
+      &-bg {
+        &__left {
+            top: 10%;
+        }
+
+        &__right {
+            top: 100%;
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
   .faq {
     display: flex;
@@ -812,6 +849,19 @@
   .social {
     display: flex;
     order: 7;
+
+    &__container {
+      max-width: 540px;
+    }
+
+    &__item {
+      &.instagram {
+        top: 40%;
+      }
+      &.twitter {
+        top: 7%;
+      }
+    }
   }
   .contact {
     display: flex;
@@ -914,6 +964,20 @@
       &-wrap:nth-child(even) {
         .info__item {
           flex-direction: column;
+
+          &-bg {
+            left: auto;
+          }
+        }
+      }
+
+      &-bg {
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        &-img {
+          bottom: 0;
         }
       }
 
@@ -1190,6 +1254,10 @@
   .social {
     &-section {
       padding-top: 22px;
+    }
+
+    &__container {
+      max-width: 540px;
     }
 
     &__item {

@@ -9,7 +9,7 @@ const swiper = new Swiper('.designed__swiper', {
     autoplay: true,
     breakpoints: {
         // when window width is >= 320px
-        375: {
+        320: {
             slidesPerView: 1,
             spaceBetween: 50,
         },
@@ -43,7 +43,7 @@ const swiperTokenMain = new Swiper('.token__main__swiper', {
     autoplay: true,
     breakpoints: {
         // when window width is >= 320px
-        375: {
+        320: {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 40,
@@ -86,7 +86,7 @@ const swiperFundMain = new Swiper('.fund__main__swiper', {
     speed: 400,
     autoplay: true,
     breakpoints: {
-        375: {
+        320: {
             loop: true,
             slidesPerView: 1,
             spaceBetween: 40,

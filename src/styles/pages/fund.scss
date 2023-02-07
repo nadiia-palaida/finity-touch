@@ -47,6 +47,7 @@
   position: relative;
 
   &-section {
+    position: relative;
     padding-top: 89px;
     padding-bottom: 87.5px;
   }
@@ -54,9 +55,16 @@
   &-bg {
     position: absolute;
     left: 0;
+    height: 100%;
+    width: 100%;
     top: 0;
-    transform: translateY(-50%);
-    z-index: -1;
+    z-index: 0;
+
+    picture {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 
   &-wrap {
@@ -317,8 +325,13 @@
   }
 
   .fund__description {
-    &-section {
-
+    picture {
+      &:last-child {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+      }
     }
 
     &-title {

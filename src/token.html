@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Token</title>
     <link rel="stylesheet" href="main.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
@@ -150,8 +150,14 @@
 
 <section class="tokenomic tokenomic-section">
     <div class="tokenomic-bg">
-        <img src="./images/token/tokenomic/bg-circle-1.png" class="tokenomic-bg-img" alt="bg-circle">
-        <img src="./images/token/tokenomic/bg-circle-2.png" class="tokenomic-bg-img" alt="bg-circle">
+        <picture>
+            <source media="(max-width:992px)" srcset="./images/token/tokenomic/bg-circle-1-mobile.png">
+            <img src="./images/token/tokenomic/bg-circle-1.png" alt="bg-circle-green" style="width:auto;">
+        </picture>
+        <picture>
+            <source media="(max-width:992px)" srcset="./images/token/tokenomic/bg-circle-2-mobile.png">
+            <img src="./images/token/tokenomic/bg-circle-2.png" alt="bg-circle-green" style="width:auto;">
+        </picture>
     </div>
 
     <div class="container tokenomic__container">
