@@ -176,6 +176,29 @@
     justify-content: space-between;
   }
 
+  &-social-link {
+    display: block;
+
+    &.linkedin:hover {
+      filter: drop-shadow(0px 0px 15px #3964FC);
+    }
+    &.instagram:hover {
+      filter: drop-shadow(0px 0px 15px #FF7235);
+    }
+    &.telegram:hover {
+      filter: drop-shadow(0px 0px 15px #9A4BFF);
+    }
+    &.twitter:hover {
+      filter: drop-shadow(0px 0px 15px #5FECFF);
+    }
+    &.discord:hover {
+      filter: drop-shadow(0px 0px 15px #9A4BFF);
+    }
+    &.reddit:hover {
+      filter: drop-shadow(0px 0px 15px #FF7235);
+    }
+  }
+
   &-bg {
     width: 100%;
     position: absolute;
@@ -295,16 +318,43 @@
 
   .fund__description {
     &-section {
+
     }
 
+    &-title {
+      margin-bottom: 26px;
+      line-height: 48px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 23px;
+      margin-bottom: 30px;
+    }
+
+
+
     &-item {
+      position: relative;
       padding: 20px 18px;
       width: calc(100%);
       margin-right: 0;
       margin-bottom: 40px;
 
       &::after {
+        content: url("./images/fund/description/arrow-down.svg");
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 47px;
+        height: 24px;
+      }
 
+      &_active {
+        &::after {
+          display: none;
+        }
       }
     }
   }
@@ -339,6 +389,68 @@
   }
 
 @media screen and (max-width: 576px) {
+  .fund__main {
+    &-wrap {
+      padding: 0 40px;
+    }
+
+    &-section {
+      //background-size: 200%;
+      background-image: url("./images/fund/main/gif-mobile.gif");
+      margin-top: 76px;
+      padding-top: 333px;
+    }
+
+    &-title {
+      margin-bottom: 5px;
+      line-height: 48px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    &-btn.token__main-btn {
+      padding: 0 30px;
+      height: 52px;
+      margin-bottom: 59px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .fund__description {
+    &-section {
+      padding-top: 57px;
+    }
+
+    &-wrap-mobile {
+      padding: 0 50px;
+    }
+
+    &-item {
+      padding-top: 18px;
+      padding-bottom: 32px;
+
+      &-title {
+        font-size: 25px;
+        line-height: 32px;
+        margin-bottom: 27px;
+      }
+
+      &-text {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .fund__faq.faq {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
   .fund__contact {
     &-section {
       padding-bottom: 0;
@@ -346,37 +458,41 @@
 
     &-wrap {
       padding: 0px;
+      margin-bottom: 5px;
 
       &::after {
+        left: 8px;
+        bottom: 10px;
         background: none;
         display: block;
-        height: 40px;
-        width: 40px;
-        border: 3px solid #fff;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #fff;
         border-top: none;
         border-right: none;
       }
 
       &::before {
+        right: 6px;
         background: none;
         display: block;
-        height: 40px;
-        width: 40px;
-        border: 3px solid #fff;
+        height: 30px;
+        width: 30px;
+        border: 2px solid #fff;
         border-bottom: none;
         border-left: none;
       }
     }
 
     &-social-list {
-      padding: 0;
+      padding: 0 10px;
       flex-wrap: wrap;
     }
 
     &-social-item {
       display: flex;
       justify-content: center;
-      margin-bottom: 27px;
+      margin-bottom: 20px;
       width: 33.3%;
       margin-right: 0;
       flex-wrap: wrap;

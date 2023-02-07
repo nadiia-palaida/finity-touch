@@ -197,7 +197,7 @@
         left: 100%;
         top: -3px;
         width: 99px;
-        height: 71px;
+        height: 75px;
         margin-left: 150px;
         border-right: 5px solid transparent;
         border-bottom: 5px solid transparent;
@@ -463,7 +463,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 576px) {
   .roadmap__item:last-child:nth-child(even) .roadmap__item-decor-text {

@@ -1,0 +1,57 @@
+.coming {
+  &__main {
+    height: 100vh;
+    background: url("./images/marketplace/circle-bg-2.png") left top no-repeat, url("./images/marketplace/circle-bg.png") right bottom no-repeat;
+
+    .container {
+      height: 100%;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__title {
+    font-family: "Chakra Petch SemiBold", sans-serif;
+    font-size: 150px;
+    line-height: 195px;
+    letter-spacing: 0.12em;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .coming {
+    &__title {
+      font-size: 100px;
+      line-height: 140px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .coming {
+    &__main {
+      background: url("./images/marketplace/circle-bg-mobile-2.png") left top no-repeat, url("./images/marketplace/circle-bg-mobile-1.png") right bottom no-repeat;
+    }
+
+    &__title {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .coming {
+    &__title {
+      text-align: center;
+      font-size: 50px;
+      line-height: 65px;
+      letter-spacing: 0.12em;
+    }
+  }
+}

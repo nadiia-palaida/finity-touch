@@ -5,7 +5,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: -1;
+    z-index: 0;
   }
 
   &-section {
@@ -66,8 +66,30 @@
 
 .tokenomic {
   &-section {
+    position: relative;
     padding-top: 89px;
     padding-bottom: 100px;
+  }
+
+  &-bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &-img {
+      &:first-child {
+        transform: translateY(-40%);
+      }
+
+      &:last-child {
+        position: absolute;
+        right: 0;
+        top: 30%;
+        //transform: translateY(-50%);
+      }
+    }
   }
 
   &__container {
@@ -102,8 +124,10 @@
 
 .roadmap {
   &-section {
+    position: relative;
     padding-top: 100px;
     padding-bottom: 143px;
+    background: url("./images/token/roadmap/bg-circle-1.png") left center no-repeat, url("./images/token/roadmap/bg-circle-2.png") right bottom no-repeat;
   }
 
   &__title {
@@ -250,6 +274,7 @@
   position: relative;
   padding-top: 143px;
   padding-bottom: 124px;
+  background: none;
 
   &-bg {
     width: 100%;
@@ -347,6 +372,7 @@
     &-info {
       width: 100%;
     }
+
     &-title {
       margin-bottom: 120px;
     }
@@ -403,6 +429,7 @@
       background-position: center 0;
     }
 
+
     &-wrap {
       padding-bottom: 50px;
     }
@@ -417,7 +444,7 @@
         padding-left: 75px;
       }
     }
-    
+
     &-text {
       text-align: center;
     }
@@ -527,8 +554,14 @@
 @media screen and (max-width: 768px) {
   .token__main {
     &-section {
-
       padding-top: 350px;
+    }
+
+    &-bg {
+      top: 150px;
+      right: 35px;
+      transform: scale3d(2, 2, 2);
+
     }
 
     &-wrap {
@@ -613,7 +646,7 @@
     &-text {
       font-size: 18px;
       line-height: 23px;
-      margin-bottom: 30px;
+      margin-bottom: 12px;
     }
 
     &-btn {
@@ -654,7 +687,7 @@
     }
   }
 
-  .roadmap__item  {
+  .roadmap__item {
     margin-bottom: 40px;
 
     &:nth-child(even) {

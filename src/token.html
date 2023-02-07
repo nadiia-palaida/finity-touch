@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Token</title>
     <link rel="stylesheet" href="main.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="header">
@@ -32,16 +32,16 @@
 
                         <ul class="menu-list">
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Home</a>
+                                <a href="main.html" class="menu-list__link">Home</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Marketplace</a>
+                                <a href="marketplace.html" class="menu-list__link">Marketplace</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Token</a>
+                                <a href="token.html" class="menu-list__link">Token</a>
                             </li>
                             <li class="menu-list__item">
-                                <a href="#" class="menu-list__link">Fund</a>
+                                <a href="fund.html" class="menu-list__link">Fund</a>
                             </li>
                         </ul>
 
@@ -76,7 +76,8 @@
 
 <section class="token__main-section">
     <div class="token__main-bg">
-        <img src="./images/token/main/bg-circle.png" alt="bg-circle">
+        <img src="./images/token/main/bg-circle.png" srcset="./images/token/main/bg-circle-mobile.png 768w"
+             alt="bg-circle">
     </div>
 
     <div class="container">
@@ -148,6 +149,11 @@
 </section>
 
 <section class="tokenomic tokenomic-section">
+    <div class="tokenomic-bg">
+        <img src="./images/token/tokenomic/bg-circle-1.png" class="tokenomic-bg-img" alt="bg-circle">
+        <img src="./images/token/tokenomic/bg-circle-2.png" class="tokenomic-bg-img" alt="bg-circle">
+    </div>
+
     <div class="container tokenomic__container">
         <div class="tokenomic__wrap">
             <h3 class="tokenomic__title title-s"><span class="text_color">FNT</span> Tokenomic</h3>
@@ -369,14 +375,14 @@
             <div class="token-address__address-wrap">
                 <div class="token-address__address">
                     <span class="token-address__address-text">0sbchj8632ebheqipf73p27up8fuuiw82woq291[i0p9e828</span>
-                    <div class="token-address__btn btn btn_color">
+                    <button class="token-address__btn btn btn_color">
                         <svg width="32" height="32" class="token-address__icon">
                             <use xlink:href="images/icons/sprite.svg#copy"></use>
                         </svg>
                         <span>
-                        Copy
-                    </span>
-                    </div>
+                            Copy
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -404,16 +410,16 @@
                 <div class="footer__menu">
                     <ul class="menu-list">
                         <li class="menu-list__item">
-                            <a href="#" class="menu-list__link">Home</a>
+                            <a href="main.html" class="menu-list__link">Home</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#" class="menu-list__link">Marketplace</a>
+                            <a href="marketplace.html" class="menu-list__link">Marketplace</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#" class="menu-list__link">Token</a>
+                            <a href="token.html" class="menu-list__link">Token</a>
                         </li>
                         <li class="menu-list__item">
-                            <a href="#" class="menu-list__link">Fund</a>
+                            <a href="fund.html" class="menu-list__link">Fund</a>
                         </li>
                     </ul>
 

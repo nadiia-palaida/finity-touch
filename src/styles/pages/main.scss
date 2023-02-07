@@ -328,6 +328,8 @@
     }
 
     &_purple {
+      //background: url("/images/home/info/bg-purple.svg") left center no-repeat;
+
       .info__item-title {
         background: linear-gradient(145.54deg, #7673FF 10.4%, #42F4FF 92.38%);
         background-clip: text;
@@ -340,6 +342,8 @@
     }
 
     &_orange {
+      //background: url("/images/home/info/bg-orange.svg") right center no-repeat;
+
       .info__item-title {
         background: linear-gradient(144.66deg, #FF6C56 6.96%, #FF9344 88.16%);
         background-clip: text;
@@ -489,6 +493,14 @@
     padding-top: 9px;
     margin-bottom: 77px;
     background: $main-black;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 100px;
   }
 
   &__swiper {
@@ -1130,6 +1142,10 @@
       img {
         height: 74px;
       }
+    }
+
+    &__item {
+      margin-right: 100px;
     }
   }
 
