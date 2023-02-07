@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Fund</title>
     <link rel="stylesheet" href="main.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 </head>
 <body>
 <header class="header">
@@ -16,42 +17,57 @@
             </div>
 
             <div class="header__menu-wrap">
-                <ul class="menu-list">
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Home</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Marketplace</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Token</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#" class="menu-list__link">Fund</a>
-                    </li>
-                </ul>
+                <button class="menu-btn">
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                </button>
 
-                <div class="languages">
-                    <div class="languages__button">
-                        <span class="languages__title">EN</span>
-                        <svg width="14" height="8" class="languages__icon-arrow">
-                            <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
-                        </svg>
+                <div class="menu-list__wrap">
+                    <div class="menu-list__wrapper">
+                        <button class="menu-btn__close">
+                            <span class="menu-btn__line"></span>
+                            <span class="menu-btn__line"></span>
+                        </button>
+
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Home</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Marketplace</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Token</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#" class="menu-list__link">Fund</a>
+                            </li>
+                        </ul>
+
+                        <div class="languages">
+                            <div class="languages__button">
+                                <span class="languages__title">EN</span>
+                                <svg width="14" height="8" class="languages__icon-arrow">
+                                    <use xlink:href="images/icons/sprite.svg#arrow-down"></use>
+                                </svg>
+                            </div>
+
+                            <!-- <ul class="languages__list">
+                                 <li class="languages__item">
+                                     <button class="languages__btn">UA</button>
+                                 </li>
+                                 <li class="languages__item">
+                                     <button class="languages__btn">PL</button>
+                                 </li>
+                             </ul>-->
+                        </div>
+
+                        <div class="header__buttons">
+                            <button class="header__btn btn btn_empty">Contact Us</button>
+                            <button class="header__btn btn btn_color">Buy Token</button>
+                        </div>
                     </div>
-
-                    <!-- <ul class="languages__list">
-                         <li class="languages__item">
-                             <button class="languages__btn">UA</button>
-                         </li>
-                         <li class="languages__item">
-                             <button class="languages__btn">PL</button>
-                         </li>
-                     </ul>-->
-                </div>
-
-                <div class="header__buttons">
-                    <button class="header__btn btn btn_empty">Contact Us</button>
-                    <button class="header__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
         </div>
@@ -86,39 +102,50 @@
                 <div class="swiper fund__main__swiper">
                     <div class="designed__list fund__main-list swiper-wrapper">
                         <div class="designed__item swiper-slide">
-                            <div class="designed__item-icon">
-                                <img src="./images/fund/main/grant.svg" alt="marketplace">
-                            </div>
-                            <div class="designed__item-text text_xs">Finity Touch is very excited to offer Grants to
-                                projects seeking to build on the FNT protocol.All Grants offered to prospective builders
-                                are subject to the final approval by Finity Touch
-                            </div>
-                            <div class="designed__item-link-wrap">
-                                <a href="#" class="designed__item-link">More</a>
-                            </div>
-                        </div>
-                        <div class="designed__item swiper-slide">
-                            <div class="designed__item-icon">
-                                <img src="./images/fund/main/hand.svg" alt="marketplace">
-                            </div>
-                            <div class="designed__item-text text_xs">Receive the ultimate support & backing to build a
-                                world-class game together with
-                                Finity Foundation
-                            </div>
-                            <div class="designed__item-link-wrap">
-                                <a href="#" class="designed__item-link">More</a>
+                            <div class="designed__item-wrapper">
+                                <div class="designed__item-icon">
+                                    <img src="./images/fund/main/grant.svg" alt="marketplace">
+                                </div>
+                                <div class="designed__item-text text_xs">Finity Touch is very excited to offer Grants to
+                                    projects seeking to build on the FNT protocol.All Grants offered to prospective
+                                    builders
+                                    are subject to the final approval by Finity Touch
+                                </div>
+                                <div class="designed__item-link-wrap">
+                                    <a href="#" class="designed__item-link">More</a>
+                                </div>
                             </div>
                         </div>
+
                         <div class="designed__item swiper-slide">
-                            <div class="designed__item-icon">
-                                <img src="./images/fund/main/game.svg" alt="marketplace">
+                            <div class="designed__item-wrapper">
+                                <div class="designed__item-icon">
+                                    <img src="./images/fund/main/hand.svg" alt="marketplace">
+                                </div>
+                                <div class="designed__item-text text_xs">Receive the ultimate support & backing to build
+                                    a
+                                    world-class game together with
+                                    Finity Foundation
+                                </div>
+                                <div class="designed__item-link-wrap">
+                                    <a href="#" class="designed__item-link">More</a>
+                                </div>
                             </div>
-                            <div class="designed__item-text text_xs">Successful Grant recipients will receive access to
-                                monetary support, milestone-based FNT rewards, and access to deep blockchain gaming
-                                support and expertise
-                            </div>
-                            <div class="designed__item-link-wrap">
-                                <a href="#" class="designed__item-link">More</a>
+                        </div>
+
+                        <div class="designed__item swiper-slide">
+                            <div class="designed__item-wrapper">
+                                <div class="designed__item-icon">
+                                    <img src="./images/fund/main/game.svg" alt="marketplace">
+                                </div>
+                                <div class="designed__item-text text_xs">Successful Grant recipients will receive access
+                                    to
+                                    monetary support, milestone-based FNT rewards, and access to deep blockchain gaming
+                                    support and expertise
+                                </div>
+                                <div class="designed__item-link-wrap">
+                                    <a href="#" class="designed__item-link">More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,20 +164,78 @@
         <div class="fund__description-wrap">
             <img src="./images/fund/description/Group-text.svg" alt="description" class="fund__description-img">
         </div>
+        <div class="fund__description-wrap-mobile">
+            <div class="fund__description-item">
+                <div class="fund__description-item-wrap">
+                    <div class="fund__description-item-decor">
+                        <div class="fund__description-item-circle"></div>
+                    </div>
+
+                    <div>
+                        <div class="fund__description-item-title">Apply.</div>
+                        <div class="fund__description-item-text">Tell Finity Touch about your project</div>
+                    </div>
+                </div>
+            </div>
+            <div class="fund__description-item">
+                <div class="fund__description-item-wrap">
+                    <div class="fund__description-item-decor">
+                        <div class="fund__description-item-circle"></div>
+                    </div>
+
+                    <div class="fund__description-item-title">Review</div>
+                    <div class="fund__description-item-text">Finity Foundation's team of analysts will review the
+                        application and contact you.
+                    </div>
+                </div>
+            </div>
+            <div class="fund__description-item">
+                <div class="fund__description-item-wrap">
+                    <div class="fund__description-item-decor">
+                        <div class="fund__description-item-circle"></div>
+                    </div>
+                    <div class="fund__description-item-title">Success.</div>
+                    <div class="fund__description-item-text">Successful applicants will be contacted by Finity
+                        Foundation
+                    </div>
+                </div>
+            </div>
+            <div class="fund__description-item fund__description-item_active">
+                <div class="fund__description-item-decor">
+                    <div class="fund__description-item-circle"></div>
+                </div>
+
+                <div class="fund__description-item-title">Ventures.</div>
+                <div class="fund__description-item-text">You get funding and marketing strategy from Finity Touch
+                    team
+                </div>
+            </div>
+            <div class="fund__description-item fund__description-item_active">
+                <div class="fund__description-item-decor">
+                    <div class="fund__description-item-circle"></div>
+                </div>
+
+                <div class="fund__description-item-title">Grants.</div>
+                <div class="fund__description-item-text">The unique idea will receive a grant and collaboration with
+                    the
+                    Finity Touch ecosystem.
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="fund__faq faq faq-section faq_green">
     <div class="container">
         <div class="faq__wrap">
-            <div class="faq__content">
+            <div class="faq__content faq__content-title">
                 <h3 class="faq__title title-s"><span class="text_color">Frequently Asked Questions</span></h3>
 
                 <div class="faq__gif-wrap">
                     <img src="./images/fund/faq/faq.gif" alt="questions-gif" class="faq__gif">
                 </div>
             </div>
-            <div class="faq__content">
+            <div class="faq__content faq__content-text">
                 <ul class="faq__list">
                     <li class="faq__item">
                         <button class="faq__item-question">
@@ -226,41 +311,41 @@
         <ul class="fund__contact-social-list">
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#linkedin-big"></use>
                     </svg>
                 </a>
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#instagram-big"></use>
                     </svg>
                 </a>
             </li>
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#telegram-big"></use>
                     </svg>
                 </a>
             </li>
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#twitter-big"></use>
                     </svg>
                 </a>
             </li>
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#reddit-big"></use>
                     </svg>
                 </a>
             </li>
             <li class="fund__contact-social-item">
                 <a href="#" class="fund__contact-social-link">
-                    <svg width="50" height="50" class="languages__icon-arrow">
+                    <svg width="50" height="50" class="fund__contact-icon">
                         <use xlink:href="images/icons/sprite.svg#discord-big"></use>
                     </svg>
                 </a>
@@ -278,9 +363,16 @@
             <img src="./images/home/footer/Rectangle_4.png" alt="mask" class="footer__bg-img footer__bg-img_mask">
         </div>
     </div>
-    <div class="container">
+
+    <div class="container footer__container">
         <div class="footer__wrap">
-            <div class="footer__content">
+            <div class="footer__content footer__content-menu">
+                <div class="footer__logo footer__logo-mobile logo-wrap">
+                    <a href="main.html">
+                        <img src="./images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
+
                 <div class="footer__menu">
                     <ul class="menu-list">
                         <li class="menu-list__item">
@@ -316,14 +408,14 @@
                     </div>
                 </div>
 
-                <div class="header__buttons">
+                <div class="header__buttons footer__buttons">
                     <button class="header__btn btn btn_empty">Contact Us</button>
                     <button class="header__btn btn btn_color">Buy Token</button>
                 </div>
             </div>
 
             <div class="footer__content">
-                <div class="footer__logo logo-wrap">
+                <div class="footer__logo footer__logo-desktop logo-wrap">
                     <a href="main.html">
                         <img src="./images/logo.svg" alt="logo" class="logo">
                     </a>

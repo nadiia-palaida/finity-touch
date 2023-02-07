@@ -1,6 +1,6 @@
 .faq {
   &-section {
-    padding: 77px 0 91px 0;
+    padding: 77px 0 109px 0;
   }
 
   &__wrap {
@@ -8,15 +8,19 @@
   }
 
   &__content {
-    width: 50%;
 
-    &:first-child {
-      margin-right: 17px;
+    &-title {
+      width: calc(50% - 20px);
+    }
+
+    &-text {
+      width: calc(50% + 20px);
     }
   }
 
   &__title {
     font-size: 60px;
+    letter-spacing: 0.02em;
     background-image: linear-gradient(143.85deg, #FFB78F 11.79%, #DB73FF 85.69%);
     background-clip: text;
     font-family: "Chakra Petch Bold", sans-serif;
@@ -33,12 +37,12 @@
 
   &__item {
     position: relative;
-    padding: 0px 37px 0 0px;
+    padding: 0px 30px 0 0px;
     margin-bottom: 30px;
     background: $main-black;
     box-shadow: 2px 2px 20px rgba(239, 57, 255, 0.3);
     border-radius: 10px;
-    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #FFB78F, #DB73FF) border-box;
+    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #FC84FF, #54D1FA) border-box;
     border: 1px solid transparent;
     overflow: hidden;
 
@@ -49,7 +53,8 @@
     &.open {
       .faq__item-answer {
         opacity: 1;
-        margin-bottom: 31px;
+        margin-bottom: 27px;
+        padding-top: 25px;
       }
     }
   }
@@ -57,13 +62,16 @@
   &__item-question {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 28px;
     padding-left: 20px;
     align-items: center;
     width: 100%;
+    font-family: "Montserrat Medium", sans-serif;
     font-size: 28px;
+    line-height: 34px;
     color: $main-white;
     cursor: pointer;
+    text-align: left;
   }
 
   &__item-answer {
@@ -73,10 +81,12 @@
     opacity: 0;
     transition: all 0.25s ease-out;
     padding-left: 10px;
-    padding-top: 20px;
+    padding-top: 30px;
     font-family: "Montserrat Regular", sans-serif;
     font-size: 19px;
+    line-height: 180%;
     color: $main-text2;
+    text-align: left;
   }
 
   &_green {
@@ -156,13 +166,18 @@
       margin-bottom: 0px;
     }
 
+    &__list {
+      padding: 0 20px;
+    }
+
     &__item {
       padding-right: 14px;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
 
       &.open {
         .faq__item-answer {
           margin-bottom: 10px;
+          padding-top: 16px;
         }
       }
 
@@ -181,6 +196,7 @@
       &-answer {
         padding-top: 15px;
         font-size: 12px;
+        line-height: 15px;
       }
     }
   }

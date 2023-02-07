@@ -1,7 +1,7 @@
 .fund__main {
   &-section {
     padding-top: calc(125px + 114px);
-    background: url('./images/fund/main/main-gif.gif') center top no-repeat;
+    background: url('./images/fund/main/main-gif.gif') center -90px no-repeat;
   }
 
   &-info {
@@ -55,7 +55,49 @@
     position: absolute;
     left: 0;
     top: 0;
-    transform: translateY(-25%);
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  &-wrap {
+    display: flex;
+    align-items: center;
+
+    &-mobile {
+      display: none;
+    }
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-item {
+    position: relative;
+    padding: 20px 9px 12px 11px;
+    background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #B2FF0F, #76FFEF) border-box;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 9px #009D2C;
+    border-radius: 30px;
+    z-index: 2;
+
+    &_active {
+      color: $main-black;
+      background: linear-gradient(#B2FF0F, #76FFEF);
+      border: none;
+    }
+
+    &-title {
+      margin-bottom: 28px;
+      font-family: "Chakra Petch Bold", sans-serif;
+      font-size: 33px;
+      line-height: 43px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -115,7 +157,7 @@
   }
 
   &-btn {
-    padding: 20px 67px 18px 67px;
+    padding: 0 67px 0 67px;
     margin-right: 23px;
     font-size: 33px;
     filter: drop-shadow(2.36275px 2.36275px 23.6275px rgba(239, 57, 255, 0.5));
@@ -139,6 +181,7 @@
     position: absolute;
     left: 0;
     top: 0;
+    z-index: -1;
   }
 
   &-bg-img {
@@ -158,3 +201,197 @@
   }
 }
 
+
+@media screen and (max-width: 1600px) {
+  .token__main {
+    &-btn {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fund__main {
+    &-info {
+      width: 100%;
+    }
+
+    &-title {
+      margin-bottom: 120px;
+    }
+  }
+
+  .fund {
+    &__contact-btn {
+      font-size: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .fund__main {
+    &-section {
+      padding-top: 450px;
+      background-position: center -250px;
+    }
+
+    &-wrap {
+      padding-bottom: 50px;
+    }
+
+    &-title {
+      text-align: center;
+      margin-bottom: 30px;
+      line-height: 60px;
+
+      &_right {
+        text-align: center;
+        padding-left: 75px;
+      }
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-btn {
+      padding: 12px 50px;
+      font-size: 20px;
+    }
+  }
+
+  .fund__description {
+    &-section {
+      padding-bottom: 40px;
+    }
+
+    &-wrap {
+      display: none;
+
+      &-mobile {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+
+    &-item {
+      width: calc(50% - 40px);
+      margin-right: 40px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fund__faq {
+    &.faq {
+      order: unset;
+    }
+  }
+
+  .fund__description {
+    &-section {
+    }
+
+    &-item {
+      padding: 20px 18px;
+      width: calc(100%);
+      margin-right: 0;
+      margin-bottom: 40px;
+
+      &::after {
+
+      }
+    }
+  }
+}
+
+  .fund__contact {
+    &-bg {
+      display: none;
+    }
+
+    &-section {
+      padding-top: 0px;
+    }
+
+    &__title {
+      display: none;
+    }
+
+
+    &-btn {
+      font-size: 22px;
+      margin-right: 0;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 50%;
+    }
+
+    &-icon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+  .fund__contact {
+    &-section {
+      padding-bottom: 0;
+    }
+
+    &-wrap {
+      padding: 0px;
+
+      &::after {
+        background: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 3px solid #fff;
+        border-top: none;
+        border-right: none;
+      }
+
+      &::before {
+        background: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 3px solid #fff;
+        border-bottom: none;
+        border-left: none;
+      }
+    }
+
+    &-social-list {
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    &-social-item {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 27px;
+      width: 33.3%;
+      margin-right: 0;
+      flex-wrap: wrap;
+    }
+
+    &-btn {
+      width: 50%;
+      padding: 0;
+      font-size: 18px;
+      max-width: 100%;
+    }
+
+
+    &-btns {
+      padding: 17px;
+    }
+  }
+}

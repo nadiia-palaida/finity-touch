@@ -74,7 +74,7 @@ const swiperTeam = new Swiper('.team-swiper', {
         // when window width is >= 320px
         375: {
             spaceBetween: 10,
-        },
+        }
     }
 });
 
@@ -84,8 +84,24 @@ const swiperFundMain = new Swiper('.fund__main__swiper', {
     slidesPerView: 3,
     spaceBetween: 40,
     speed: 400,
-
-    autoplay: true
+    autoplay: true,
+    breakpoints: {
+        375: {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: false,
+        },
+        992: {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    }
 });
 
 const swiperPartners = new Swiper('.partners__swiper', {

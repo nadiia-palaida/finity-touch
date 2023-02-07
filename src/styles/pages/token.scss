@@ -5,17 +5,18 @@
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -1;
   }
 
   &-section {
     padding-top: calc(125px + 114px);
-    background: url('./images/token/main/main-bg.gif') center top no-repeat;
+    background: url('./images/token/main/main-bg.gif') center -90px no-repeat;
     background-size: contain;
   }
 
   &-wrap {
     position: relative;
-    padding-bottom: 101px;
+    padding-bottom: 89px;
   }
 
   &-info {
@@ -25,6 +26,7 @@
   &-title {
     width: 100%;
     margin-bottom: 21px;
+    line-height: 100px;
 
     &_right {
       display: block;
@@ -39,7 +41,8 @@
       background-image: linear-gradient(103.59deg, #FC84FF 13.23%, #54D1FA 91.95%);
 
       &:last-child {
-        margin-bottom: 0;
+        position: relative;
+        top: 21px;
       }
     }
   }
@@ -47,12 +50,13 @@
   &-text {
     font-family: "Chakra Petch Regular", sans-serif;
     font-size: 22px;
-    margin-bottom: 45px;
+    margin-bottom: 39px;
   }
 
   &-btn {
-    padding: 18px 70.5px;
-    margin-bottom: 173px;
+    height: 63px;
+    padding: 0 70.5px;
+    margin-bottom: 160px;
     position: relative;
     background: linear-gradient($main-black, $main-black) padding-box,
     linear-gradient(to right, #FC84FF, #54D1FA) border-box;
@@ -62,7 +66,7 @@
 
 .tokenomic {
   &-section {
-    padding-top: 101px;
+    padding-top: 89px;
     padding-bottom: 100px;
   }
 
@@ -81,6 +85,8 @@
   }
 
   &__title {
+    font-size: 69px;
+    line-height: 84px;
     margin-bottom: 21px;
     font-family: "Montserrat SemiBold", sans-serif;
     background-image: linear-gradient(117.47deg, #86AFFE 7.39%, #A57AFF 23.36%, #FB84FF 38.85%);
@@ -88,6 +94,7 @@
 
   &__description {
     margin-bottom: 66px;
+    line-height: 155%;
     letter-spacing: normal;
     text-align: center;
   }
@@ -109,6 +116,8 @@
     max-width: 1113px;
     text-align: center;
     margin-bottom: 99px;
+    font-size: 25px;
+    line-height: 155%;
   }
 
   &__item {
@@ -120,7 +129,7 @@
 
       .roadmap__item-decor-wrap {
         margin-right: 0;
-        margin-left: 30px;
+        margin-left: 28px;
       }
 
       .roadmap__item-decor {
@@ -159,49 +168,8 @@
 
     &-wrap {
       position: relative;
-      margin-right: 30px;
+      margin-right: 28px;
       margin-top: 50px;
-
-      .roadmap__item-decor-curve {
-        position: absolute;
-        top: calc(50% + 42px);
-        right: 23px;
-
-        &:before {
-          position: absolute;
-          top: 0;
-          right: 0;
-          display: block;
-          content: '';
-          width: 100px;
-          height: 100px;
-          margin-left: -100px;
-          border-right: 5px solid transparent;
-          border-bottom: 5px solid transparent;
-          -webkit-border-radius: 0 0 100px 0;
-          -moz-border-radius: 0 0 100px 0;
-          border-radius: 0 0 100px 0;
-          background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(to left, #F36AFF, #C275FF) border-box;
-        }
-
-        &:after {
-          position: absolute;
-          left: 0;
-          transform: translateX(calc(-100% + 4px));
-          top: 100px;
-          display: block;
-          margin-left: -100px;
-          content: '';
-          width: 99px;
-          height: 90px;
-          border-left: 5px solid transparent;
-          border-top: 5px solid transparent;
-          -webkit-border-radius: 100px 0 0 0;
-          -moz-border-radius: 100px 0 0 0;
-          border-radius: 100px 0 0 0;
-          background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(to left, #C275FF, #54D6FF) border-box;
-        }
-      }
     }
 
     &-text {
@@ -214,8 +182,8 @@
 
     &-circle {
       position: relative;
-      width: 50px;
-      height: 50px;
+      width: 57px;
+      height: 57px;
       border: 5px solid #F36AFF;
       background: $main-black;
       border-radius: 50%;
@@ -247,17 +215,20 @@
   }
 
   &__block-item {
-    padding: 30px 50px;
+    padding: 10px 50px 20px 37px;
     background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #FFB78F, #DB73FF) border-box;
     border-bottom: 2px solid transparent;
     position: relative;
 
     &:last-child {
+      padding-top: 15px;
+      padding-bottom: 30px;
       border-radius: 0 0 30px 30px;
       border: none;
     }
 
     &:first-child {
+      padding-top: 30px;
       border-radius: 30px 30px 0 0;
     }
   }
@@ -271,6 +242,7 @@
 
   &__block-item-text {
     font-size: 24px;
+    line-height: 29px;
   }
 }
 
@@ -311,17 +283,19 @@
 
 .token-address {
   &-section {
-    padding-top: 124px;
+    padding-top: 128px;
     padding-bottom: 118px;
   }
 
   &__title {
-    margin-bottom: 25px;
+    font-size: 64px;
+    line-height: 83px;
+    margin-bottom: 23px;
     background-image: linear-gradient(116.77deg, #FC84FF 3.43%, #54D1FA 38.39%);
   }
 
   &__text {
-    margin-bottom: 70px;
+    margin-bottom: 72px;
     font-size: 19px;
     line-height: 23px;
     text-align: center;
@@ -330,7 +304,7 @@
   &__address {
     display: inline-flex;
     align-items: center;
-    padding: 10px 10px 11px 33px;
+    padding: 8px 10px 10px 33px;
     border: 1px solid $main-white;
     border-radius: 50px;
 
@@ -340,12 +314,18 @@
     }
 
     &-text {
+      font-size: 20px;
+      line-height: 24px;
       margin-right: 69px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
     }
   }
 
   &__btn {
-    padding: 24px 46px 20px 46px;
+    height: 76px;
+    padding: 0 46px;
     font-size: 20px;
   }
 
@@ -420,6 +400,7 @@
   .token__main {
     &-section {
       padding-top: 450px;
+      background-position: center 0;
     }
 
     &-wrap {
@@ -429,6 +410,7 @@
     &-title {
       text-align: center;
       margin-bottom: 30px;
+      line-height: 60px;
 
       &_right {
         text-align: center;
@@ -459,9 +441,36 @@
     }
   }
 
+  .tokenomic {
+    &__title {
+      font-size: 45px;
+    }
+  }
+
   .roadmap {
+    &-section {
+      padding-bottom: 72px;
+    }
+
     &__item {
       margin-bottom: 80px;
+
+      &-decor {
+        &-circle {
+          margin: 0;
+          background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(to left, #FC84FF, #54D1FA) border-box;
+          border: 5px solid transparent;
+          transform: translateX(-5px);
+        }
+
+        &-text {
+          position: relative;
+          font-size: 18px;
+          margin-right: 0;
+          margin-bottom: 5px;
+          left: 10px;
+        }
+      }
 
       &:nth-child(even) {
         flex-direction: row;
@@ -478,16 +487,39 @@
         .roadmap__item-decor-circle {
           margin-right: 0;
           margin-left: 0;
+          border-color: transparent;
         }
 
         .roadmap__item-decor-text {
-          margin-right: 20px;
+          margin-right: 0px;
         }
       }
     }
 
     &__block {
       width: 100%;
+
+      &-item-title {
+        font-size: 26px;
+      }
+
+      &-item-text {
+        font-size: 15px;
+      }
+    }
+
+    &__description {
+      margin-bottom: 60px;
+    }
+  }
+
+  .token-address {
+    &__title {
+      font-size: 45px;
+    }
+
+    &__address-text {
+      width: 300px;
     }
   }
 }
@@ -495,6 +527,7 @@
 @media screen and (max-width: 768px) {
   .token__main {
     &-section {
+
       padding-top: 350px;
     }
 
@@ -509,12 +542,13 @@
 
   .tokenomic {
     &-section {
-      padding-top: 40px;
+      padding-top: 62px;
       padding-bottom: 47px;
     }
 
     &__title {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 30px;
     }
 
     &__description {
@@ -542,26 +576,149 @@
   .token-address {
     display: none;
   }
+
+  .roadmap {
+    &-section {
+      padding-bottom: 35px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__description {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
   .token__main {
+    &-wrap {
+      padding: 0 20px;
+    }
+
     &-section {
+      background-size: 200%;
+      background-image: url("./images/token/main/gif-mobile.gif");
       margin-top: 76px;
-      padding-top: 200px;
+      padding-top: 293px;
     }
 
     &-title {
-      margin-bottom: 30px;
+      margin-bottom: 26px;
+      line-height: 48px;
     }
 
     &-text {
       font-size: 18px;
+      line-height: 23px;
       margin-bottom: 30px;
+    }
+
+    &-btn {
+      height: 52px;
+      margin-bottom: 59px;
+    }
+  }
+
+  .tokenomic {
+    &-section {
+      padding-bottom: 5px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__description {
+      font-size: 12px;
+      line-height: 155%;
+    }
+
+    &__chart {
+      &-wrap {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .roadmap {
+    &-section {
+      padding-bottom: 17px;
+    }
+
+    &__title {
+      margin-bottom: 38px;
+    }
+  }
+
+  .roadmap__item  {
+    margin-bottom: 40px;
+
+    &:nth-child(even) {
+      .roadmap__item-decor-wrap {
+        margin-right: 40px;
+      }
+    }
+
+    &-decor {
+      &-wrap {
+        margin-top: 15px;
+        margin-right: 40px;
+      }
+
+      &-circle {
+        width: 43px;
+        height: 43px;
+        transform: translateX(6px);
+      }
+
+      &-text {
+        left: 20px;
+        font-size: 14px;
+        margin-top: 2px;
+        line-height: 18px;
+        letter-spacing: 0.11em;
+      }
+    }
+  }
+
+  .roadmap__block {
+    &-item {
+      padding: 6px 16px;
+
+      &:first-child {
+        padding-top: 13px;
+      }
+
+      &:last-child {
+        padding-top: 8px;
+        padding-bottom: 6px;
+      }
+
+      &-title {
+        font-size: 15px;
+        margin-bottom: 2px;
+        line-height: 20px;
+        letter-spacing: 0.11em;
+      }
+
+      &-text {
+        font-size: 10px;
+        line-height: 12px;
+      }
     }
   }
 
   .token__contact {
-    padding-top: 30px;
+    padding-top: 0px;
+
+    &__title {
+      margin-bottom: 32px;
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 }

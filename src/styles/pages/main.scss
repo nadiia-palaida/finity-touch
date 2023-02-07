@@ -1,20 +1,20 @@
 .main {
   &-section {
-    padding: 0px 0 46px 0;
+    padding: 0px 0 55px 0;
     padding-top: calc(89px + 114px);
   }
 
   &__wrap {
     display: flex;
-    align-items: center;
   }
 
   &__title {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   &__subtitle {
-    line-height: 59px;
+    line-height: 58.51px;
+    margin-bottom: 27px;
   }
 
   &__text {
@@ -27,6 +27,10 @@
 
   &__btn {
     margin-right: 20px;
+
+    &_buy {
+      background: linear-gradient(103.59deg, #86AFFE 13.23%, #A57AFF 53.2%, #FB84FF 91.95%);
+    }
 
     &:last-child {
       margin-right: 0;
@@ -52,11 +56,11 @@
 
 .designed {
   &-section {
-    padding: 45px 0 111.5px 0;
+    padding: 55px 0 100px 0;
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   &__list {
@@ -66,17 +70,42 @@
   &__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
-    padding: 22px 21px 13px 30px;
+    padding: 22px 11px 13px 20px;
     box-shadow: 2px 2px 9px #91009D;
     border-radius: 60px;
     background: linear-gradient($main-black, $main-black) padding-box,
-    linear-gradient(45deg, #86AFFE, #A57AFF, #FB84FF) border-box;
+    linear-gradient(to right, #86AFFE, #A57AFF, #FB84FF) border-box;
     border: 1px solid transparent;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_token {
+      padding-top: 32px;
+      padding-bottom: 5px;
+
+      .designed__item-icon {
+        margin-bottom: 18px;
+      }
+
+      .designed__item-text {
+        padding: 0;
+        margin-bottom: 0;
+      }
+
+      .designed__item-link {
+        font-size: 22px;
+        line-height: 27px;
+      }
     }
   }
 
@@ -91,16 +120,20 @@
     font-family: "Montserrat SemiBold", sans-serif;
     text-align: center;
     font-size: 28px;
+    line-height: 34px;
   }
 
   &__item-text {
     margin-bottom: 10px;
     text-align: center;
+    padding: 10px;
+    padding-top: 0;
   }
 
   &__item-link-wrap {
     display: flex;
     justify-content: center;
+    margin-top: auto;
   }
 
   &__item-link {
@@ -119,7 +152,7 @@
 
 .info {
   &-section {
-    padding: 111px 0 70px 0;
+    padding: 100px 0 63px 0;
   }
 
   &__wrap {
@@ -129,12 +162,11 @@
   &__item {
     position: relative;
     display: flex;
-    align-items: center;
     z-index: 5;
 
     &-wrap {
       position: relative;
-      margin-bottom: 109px;
+      margin-bottom: 147px;
 
       &:last-child {
         margin-bottom: 0;
@@ -148,11 +180,17 @@
         .info__item-bg {
           left: 0;
         }
+
+        .info__item-img-wrap {
+          margin-right: 0;
+          margin-left: 8px;
+        }
       }
     }
 
     &-img-wrap {
       width: 50%;
+      margin-right: 8px;
     }
 
     &-img {
@@ -165,8 +203,8 @@
       &::before {
         content: '';
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 2px;
+        top: -4px;
         display: block;
         width: 70px;
         height: 70px;
@@ -176,7 +214,7 @@
       &::after {
         content: '';
         position: absolute;
-        left: 0;
+        left: 16px;
         bottom: 0;
         display: block;
         width: 70px;
@@ -190,21 +228,26 @@
     }
 
     &-title {
-      padding-left: 60px;
+      padding-left: 62px;
+      padding-right: 20px;
       margin-bottom: 25px;
+      line-height: 110px;
+      letter-spacing: -0.02em;
 
       -webkit-text-fill-color: $main-white;
       color: $main-white;
     }
 
     &-description {
-      padding: 0 0 26px 60px;
+      padding: 0 0 70px 75px;
     }
 
     &-link-wrap {
       display: flex;
       align-items: flex-end;
       position: relative;
+      transform: translateY(-8%);
+      padding-left: 15px;
     }
 
     &-link-decor {
@@ -221,7 +264,10 @@
     }
 
     &-link-text {
-      margin-right: 12px;
+      display: block;
+      width: 30px;
+      height: 22px;
+      margin-left: 14px;
     }
 
     &-link-decoration {
@@ -289,7 +335,7 @@
 
       .info__item-link {
         background: linear-gradient($main-black, $main-black) padding-box,
-        linear-gradient(145.54deg, #7673FF 10.4%, #42F4FF 92.38%) border-box;
+        linear-gradient(145.54deg, #54D6FF, #C275FF, #F36AFF) border-box;
       }
     }
 
@@ -312,9 +358,13 @@
     display: none;
   }
 
+  &__container {
+    max-width: 1291px;
+  }
+
   &-section {
     position: relative;
-    padding: 70px 0 51px 0;
+    padding: 63px 0 51px 0;
   }
 
   &-section-bg {
@@ -352,7 +402,7 @@
   &__group {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 75px;
+    margin-bottom: 32px;
   }
 
   &__btn-wrap {
@@ -361,6 +411,7 @@
   }
 
   &__btn {
+    height: 63px;
     font-size: 22px;
     border-color: $main-white;
   }
@@ -371,10 +422,10 @@
 }
 
 .team-card {
-  width: calc(25% - 47px);
+  width: 280px;
   margin-right: 47px;
   margin-bottom: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   box-shadow: 2px 2px 9px #91009D;
   border-radius: 10px;
   background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(45deg, #86AFFE, #A57AFF, #FB84FF) border-box;
@@ -386,13 +437,14 @@
 
   &__img {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     border-radius: 10px;
   }
 
   &__name {
     margin-bottom: 13.5px;
-    font-size: 25px;
+    font-size: 23px;
+    line-height: 28px;
     text-align: center;
   }
 
@@ -450,7 +502,7 @@
 
 .social {
   &-section {
-    padding: 91px 0 140px 0px;
+    padding: 109px 0 140px 0px;
   }
 
   &__container {
@@ -495,33 +547,33 @@
     z-index: 5;
 
     &.linkedin {
-      top: -50%;
-      left: 60%;
+      top: -54%;
+      left: 52%;
     }
 
     &.discord {
-      top: -35%;
-      left: 30%;
+      top: -36%;
+      left: 27%;
     }
 
     &.reddit {
-      top: 2%;
-      left: 45%;
+      top: -2%;
+      left: 44%;
     }
 
     &.telegram {
-      top: 4%;
-      left: 20%;
+      top: 5%;
+      left: 19%;
     }
 
     &.twitter {
-      top: 10%;
-      left: 65%;
+      top: 9%;
+      left: 64%;
     }
 
     &.instagram {
-      top: 48%;
-      left: 25%;
+      top: 46%;
+      left: 26%;
     }
   }
 
@@ -539,12 +591,15 @@
 
 .contact {
   &-section {
-    padding: 140px 0 233.5px 0;
+    padding: 137px 0 216px 0;
     background: url('./images/home/contact-us/tokens.png')  left top no-repeat, url('./images/home/contact-us/tokens-1.png') right bottom no-repeat;
   }
 
   &__title {
-    margin-bottom: 63px;
+    font-family: "Montserrat Bold", sans-serif;
+    line-height: 61px;
+    font-size: 50px;
+    margin-bottom: 42px;
   }
 
   &__form-wrap {
@@ -554,6 +609,24 @@
 
   &__form {
     width: 611px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .info__item {
+    &-title {
+      line-height: 70px;
+    }
+  }
+
+  .team-card {
+    width: calc(25% - 40px);
+  }
+
+  .contact {
+    &-section {
+      background: url("./images/home/contact-us/tokens.png") -200px top no-repeat, url("./images/home/contact-us/tokens-1.png") right bottom no-repeat;
+    }
   }
 }
 
@@ -593,6 +666,12 @@
   .contact {
     &-section {
       background: none;
+    }
+  }
+
+  .info__item {
+    &-title {
+      line-height: 50px;
     }
   }
 }
@@ -642,6 +721,14 @@
 
       &-product-number {
         font-size: 14px;
+      }
+
+      &-title {
+        line-height: 45px;
+      }
+
+      &-description {
+        padding: 0 0 30px 50px;
       }
     }
   }
@@ -732,6 +819,7 @@
 
     &__wrap {
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     &__info {
@@ -743,6 +831,7 @@
 
     &__gif-wrap {
       width: 75%;
+      margin-bottom: 18px;
     }
 
     &__title {
@@ -750,11 +839,13 @@
     }
 
     &__subtitle {
-      margin-bottom: 11px;
+      margin-bottom: 16px;
+      line-height: 27px;
     }
 
     &__text {
-      margin-bottom: 11.5px;
+      margin-bottom: 22px;
+      line-height: 24px;
     }
 
     &__buttons {
@@ -763,12 +854,15 @@
 
     &__btn {
       margin-right: 24px;
+      height: 59px;
+      font-size: 19.761px;
+      line-height: 24px;
     }
   }
 
   .designed {
     &__title {
-      margin-bottom: 29px;
+      margin-bottom: 21px;
     }
 
     &__item {
@@ -816,7 +910,7 @@
       }
 
       &-text-wrap {
-        margin-bottom: 15px;
+        margin-bottom: 23px;
       }
 
       &-text {
@@ -826,6 +920,10 @@
       &-link-wrap {
         flex-direction: column;
         align-items: center;
+      }
+
+      &-title {
+        text-align: center;
       }
     }
   }
@@ -889,13 +987,24 @@
 
   .main {
     &-section {
-      padding-bottom: 43px;
+      padding-bottom: 0px;
     }
   }
 
   .designed {
     &-section {
+      padding-top: 20px;
       padding-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    &__swiper-wrap {
+      padding-left: 40px;
+      padding-right: 42px;
     }
 
     &__item {
@@ -913,11 +1022,33 @@
       &-title {
         font-size: 16px;
         line-height: 20px;
-        margin-bottom: 8.5px;
+        margin-bottom: 14px;
       }
 
       &-text {
         margin-bottom: 13px;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+
+      &_token {
+        padding-top: 28px;
+
+        .designed__item-icon {
+          margin-bottom: 16px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .designed__item-link {
+          font-size: 15px;
+          line-height: 18px;
+        }
       }
     }
   }
@@ -925,21 +1056,65 @@
   .info {
     &__item {
       &-wrap {
-        margin-bottom: 32px;
+        margin-bottom: 25px;
       }
 
       &-title {
-        padding: 0 40px;
+        text-align: left;
+        padding: 0 45px;
         margin-bottom: 7px;
+        letter-spacing: unset;
+        line-height: 39px;
+      }
+
+      &-text-wrap::after {
+        left: 17px;
+        bottom: -2px;
+        background: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 2px solid #fff;
+        border-top: none;
+        border-right: none;
+      }
+
+      &-text-wrap::before {
+        transform: translateX(-50%);
+        top: -2px;
+        right: -2px;
+        background: none;
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: 2px solid #fff;
+        border-bottom: none;
+        border-left: none;
       }
       
       &-description {
         text-align: center;
-        padding: 0 24px 20px 24px;
+        padding: 0 9px 20px 30px;
+        letter-spacing: 0.03em;
       }
 
       &-product-number {
         font-size: 10px;
+      }
+
+      &-link {
+        height: 45px;
+
+        &-text {
+          width: 20px;
+          height: 15px;
+          margin-left: 5px;
+        }
+
+        &-decor {
+          transform: translateY(-15px);
+          padding-right: 10px;
+        }
       }
 
       &-link-decoration {
@@ -958,12 +1133,31 @@
     }
   }
 
+  .team {
+    &-section {
+      padding-top: 93px;
+      padding-bottom: 10px;
+    }
+
+    &__title {
+      margin-bottom: 13px;
+    }
+  }
+
   .team-card {
+    padding-bottom: 0;
+
+    &__img {
+      margin-bottom: 2px;
+    }
+
     &__name {
       font-size: 12px;
+      margin-bottom: -3px;
     }
 
     &__position {
+      margin-bottom: 10px;
       font-size: 9px;
     }
 
@@ -977,8 +1171,11 @@
     }
   }
 
-
   .social {
+    &-section {
+      padding-top: 22px;
+    }
+
     &__item {
       &-icon {
         width: 67px;
@@ -986,11 +1183,28 @@
     }
 
     &__title {
-      margin-bottom: 130px;
+      font-size: 21px;
+      line-height: 27px;
+      margin-bottom: 112px;
+    }
+
+    &__bg {
+      padding: 0 20px;
     }
 
     &__bg-mask {
-      bottom: -7%;
+      bottom: -12%;
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+  }
+
+  .contact {
+    padding-top: 45px;
+
+    &__title {
+      font-size: 21px;
+      line-height: 26px;
+      margin-bottom: 29px;
     }
   }
 }

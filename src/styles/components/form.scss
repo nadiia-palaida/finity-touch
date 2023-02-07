@@ -7,7 +7,7 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-bottom: 21px;
+    margin-bottom: 18px;
 
     &::after {
       content: '';
@@ -35,8 +35,9 @@
     width: 100%;
     padding: 20px 10px;
     border-bottom: 2px solid transparent;
-    //background: linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #FC84FF, #54D1FA) border-box;
+    font-family: "Montserrat Medium", sans-serif;
     font-size: 28px;
+    line-height: 34px;
     color: $main-white;
     box-shadow: 2px 2px 20px rgba(239, 57, 255, 0.5);
     clip-path: polygon(0% 0%, 100% 0%, 100% 120%, 0% 120%);
@@ -49,8 +50,10 @@
   }
 
   &__submit-btn {
+    height: 67px;
     font-family: "Montserrat SemiBold", sans-serif;
     font-size: 28px;
+    line-height: 34px;
     padding: 17px 73px;
     background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(to right, #FC84FF, #54D1FA) border-box;
     border-radius: 0px 60px;
@@ -74,6 +77,8 @@
 
 @media screen and (max-width: 576px) {
   .form {
+    padding: 0 20px;
+
     &__inputs {
       margin-bottom: 29px;
     }
@@ -82,9 +87,15 @@
       padding: 8px 10px;
       font-size: 13px;
       line-height: 16px;
+      border-bottom: 1px solid transparent;
+
+      &-wrap {
+        margin-bottom: 32px;
+      }
     }
 
     &__submit-btn {
+      height: 43px;
       padding: 10px 42px;
       font-size: 19px;
     }

@@ -1,9 +1,12 @@
 .btn {
+  height: 63px;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   font-family: "Montserrat SemiBold", sans-serif;
-  padding: 18px 35px;
+  padding: 0px 35px;
   font-size: 22px;
+  line-height: 26.82px;
   color: $main-white;
   border-radius: 50px;
   cursor: pointer;
@@ -19,6 +22,7 @@
 
   &_color {
     background: linear-gradient(103.59deg, #54D6FF 13.23%, #C275FF 56.28%, #F36AFF 91.95%);
+    padding: 0px 45px;
 
     &:hover {
       box-shadow: 2px 2px 15px #91009D;
@@ -26,23 +30,26 @@
   }
 
   &_outlined {
-    padding: 22.5px 22.37px 22.5px 27.73px;
+    height: 78px;
+    padding: 0 22px 0 27px;
     border-radius: 60px 0px;
     font-size: 27px;
+    line-height: 33px;
     border: 2px solid transparent;
   }
 }
 
 @media screen and (max-width: 1600px) {
   .btn {
-    padding: 15px 30px;
+    padding: 0 30px;
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .btn {
-    padding: 12px 20px;
+    height: 50px;
+    padding: 0 20px;
     font-size: 18px;
   }
 }

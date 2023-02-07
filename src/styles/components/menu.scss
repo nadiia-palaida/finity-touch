@@ -29,7 +29,6 @@
   &__button {
     position: relative;
     margin-left: 40px;
-    padding-bottom: 5px;
     display: flex;
     align-items: center;
     color: $main-white;
@@ -55,7 +54,7 @@
   }
 
   &__title {
-    margin-right: 9px;
+    margin-right: 7px;
     font-size: 22px;
   }
 
@@ -238,5 +237,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .menu-btn {
+    padding: 10px 0;
 
+    &__line {
+      margin-bottom: 6px;
+    }
+  }
 }
